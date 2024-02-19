@@ -65,17 +65,19 @@ function Page(){
                 <nav><img src="./react-logo.png" width ="70px" alt="Logo"/></nav>
             </header>
             <h1>Reasons I'm excited to learn React</h1>
-            <ul>
+            <ol>
                 <li>Popularity </li>
                 <li>Declarative Syntax </li>
                 <li>Virtual DOM </li>
                 <li>Ecosystem</li>
                 <li>Backed by Facebook</li>
                 <li>Learning Opportunities</li>
-            </ul>
+            </ol>
             {/* <p>This is my page</p> */}
 
-            <footer>© 2024  Kibet development. All rights reserved.</footer>
+            <footer>
+               <small><small>  © 2024  Kibet development. All rights reserved.</small></small>
+                </footer>
         </div>
     )
 }
