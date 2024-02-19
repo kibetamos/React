@@ -1,6 +1,10 @@
 html, body {
     margin: 0;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body expands to at least the height of the viewport */
+    margin: 0;
 
 }
 .nav-items{
@@ -23,6 +27,7 @@ html, body {
     width: 40px;
 }
 .footer{
+
     background-color: rgb(103, 96, 96);
     color: white; /* Optionally, set text color */
     padding: 20px; /* Adjust padding as needed */
