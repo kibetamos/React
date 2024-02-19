@@ -19,28 +19,65 @@ Hints:
 //     );
 // }
 
-function Navbar(){
-    return (
+// function Navbar(){
+//     return (
+//         <div>
+//             <img src="./react-logo.png" width="80px" />
+//             <h1>Fun facts about React</h1>
+//             <ul>
+//                 <li>Was first released in 2013</li>
+//                 <li>Originally created by Jordan Walke</li>
+//                 <li>Has well over 100k stars on GitHub</li>
+//                 <li>Maintained by Facebook</li>
+//                 <li>Powers thousands of enterprise apps</li>
+//             </ul>
+//         </div>
+//     );
+// }
+
+
+// console.log(Navbar)
+// ReactDOM.render(
+//     <div>
+//         <logoImage />
+//         <Navbar />
+//     </div>,
+//     document.getElementById("root")
+// )
+
+
+/**
+Challenge: 
+
+Part 1: Create a page of your own using a custom Page component
+
+It should return an ordered list with the reasons why you're
+excited to be learning React :)
+
+Render your list to the page
+
+ */
+
+function Page(){
+    return(
         <div>
-            <img src="./react-logo.png" width="80px" />
-            <h1>Fun facts about React</h1>
+            <h1>I love React, Why ...</h1>
             <ul>
-                <li>Was first released in 2013</li>
-                <li>Originally created by Jordan Walke</li>
-                <li>Has well over 100k stars on GitHub</li>
-                <li>Maintained by Facebook</li>
-                <li>Powers thousands of enterprise apps</li>
+                <li>Popularity </li>
+                <li>Declarative Syntax </li>
+                <li>Virtual DOM </li>
+                <li>Ecosystem</li>
+                <li>Backed by Facebook</li>
+                <li>Learning Opportunities</li>
             </ul>
+            {/* <p>This is my page</p> */}
         </div>
-    );
+    )
 }
 
-
-console.log(Navbar)
 ReactDOM.render(
     <div>
-        <logoImage />
-        <Navbar />
+        <Page />
     </div>,
     document.getElementById("root")
 )
