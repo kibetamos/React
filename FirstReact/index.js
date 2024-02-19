@@ -62,10 +62,13 @@ appending an h1 to our div#root (without using innerHTML).
 
 const navbar = (
     <nav>
-    <a href="">Home</a>
-    <a href="/about">About Us</a>
-    <a href="/contact-us">Contact Us</a>
-</nav>
+        <h1>Bob's Bistro</h1>
+        <ul>
+            <li>Menu</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
 
 )
 
