@@ -75,9 +75,10 @@ function Page(){
     )
 }
 
-ReactDOM.render(
-    <div>
-        <Page />
-    </div>,
-    document.getElementById("root")
-)
+// ReactDOM.render(
+//     <div>
+//         <Page />
+//     </div>,
+//     document.getElementById("root")
+// )
+ReactDOM.render(<Page />, document.getElementById("root"))
