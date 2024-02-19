@@ -76,7 +76,18 @@ function Page(){
     return(
         <div>
            <Header />
-            <h1>Reasons I'm excited to learn React</h1>
+        <MainComponent />
+            {/* <p>This is my page</p> */}
+
+            <Footer />
+        </div>
+    )
+}
+
+function MainComponent(){
+    return(
+        <div>
+                <h1>Reasons I'm excited to learn React</h1>
             <ol>
                 <li>Popularity </li>
                 <li>Declarative Syntax </li>
@@ -85,15 +96,16 @@ function Page(){
                 <li>Backed by Facebook</li>
                 <li>Learning Opportunities</li>
             </ol>
-            {/* <p>This is my page</p> */}
-
-            <footer>
-               <small><small>  © 2024  Kibet development. All rights reserved.</small></small>
-                </footer>
         </div>
+
     )
 }
+function Footer(){
+    return(
+        <small><small>  © 2024  Kibet development. All rights reserved.</small></small>
 
+    )
+}
 /**
 Challenge: 
 
