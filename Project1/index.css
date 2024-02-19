@@ -18,3 +18,7 @@ html, body {
 .nav-items > li {
     padding: 10px;
 }
+
+.nav-logo{
+    width: 40px;
+}

@@ -79,7 +79,7 @@ function Header() {
     return (
         <header>
             <nav className="nav">
-                <img src="./react-logo.png" width="40px" />
+            <img src="./react-logo.png" className="nav-logo" />
                 <ul className= "nav-items">
                     <li>Pricing</li>
                     <li>About</li>
@@ -93,9 +93,9 @@ function Header() {
 function Page(){
     return(
         <div>
-        <Header />
-        <MainComponent />
-        <Footer />
+            <Header />
+            <MainComponent />
+            <Footer />
         </div>
     )
 }
