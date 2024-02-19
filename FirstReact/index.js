@@ -72,6 +72,6 @@ const navbar = (
 console.log(navbar)
 
 ReactDOM.render(
-    navbar,
+    navbar, 
     document.getElementById('root')
 )
