@@ -15,7 +15,7 @@ const page = (
 )
 ```
     
---We need our JSX to be nested under a single parent element
+    --We need our JSX to be nested under a single parent element
 
 4. What does it mean for something to be "declarative" instead of "imperative"?
     
