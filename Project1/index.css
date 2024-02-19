@@ -22,3 +22,11 @@ html, body {
 .nav-logo{
     width: 40px;
 }
+.footer{
+    background-color: rgb(103, 96, 96);
+    color: white; /* Optionally, set text color */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center; /* Center the content horizontally */
+    align-self: flex-end; /* Align the footer to the bottom */
+
+}
