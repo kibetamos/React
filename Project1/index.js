@@ -61,7 +61,10 @@ Render your list to the page
 function Page(){
     return(
         <div>
-            <h1>I love React, Why ...</h1>
+            <header> 
+                <nav><img src="./react-logo.png" width ="70px" alt="Logo"/></nav>
+            </header>
+            <h1>Reasons I'm excited to learn React</h1>
             <ul>
                 <li>Popularity </li>
                 <li>Declarative Syntax </li>
@@ -71,6 +74,8 @@ function Page(){
                 <li>Learning Opportunities</li>
             </ul>
             {/* <p>This is my page</p> */}
+
+            <footer>© 2024  Kibet development. All rights reserved.</footer>
         </div>
     )
 }
