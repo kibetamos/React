@@ -45,9 +45,16 @@ function Navbar() {
 // Afterward, render it below the Navbar (which
 // you can do inside the ReactDOM.render call below)
 
+function MainContent(){
+    return (
+        <h1>I'm learning React!</h1>
+    )
+
+}
 ReactDOM.render(
     <div>
         <Navbar />
+        <MainContent />
         
     </div>,
     document.getElementById("root")
