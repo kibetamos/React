@@ -35,19 +35,19 @@ appending an h1 to our div#root (without using innerHTML).
 // console.log(h1)
 
 // JSX
-const page = (
-    <div>
-        <h1 className="header">This is JSX</h1>
-        <p>This is a paragraph</p>
-    </div>
-)
+// const page = (
+//     <div>
+//         <h1 className="header">This is JSX</h1>
+//         <p>This is a paragraph</p>
+//     </div>
+// )
 
-console.log(page)
+// console.log(page)
 
-ReactDOM.render(
-    page,
-    document.getElementById("root")
-)
+// ReactDOM.render(
+//     page,
+//     document.getElementById("root")
+// )
 
 // Challenge: 
 
@@ -60,3 +60,18 @@ ReactDOM.render(
 //     - Don't worry about styling yet - it'll just be plain-looking HTML for now
 // */
 
+const navbar = (
+    <nav>
+    <a href="">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/contact-us">Contact Us</a>
+</nav>
+
+)
+
+console.log(navbar)
+
+ReactDOM.render(
+    navbar,
+    document.getElementById('root')
+)
