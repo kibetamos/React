@@ -13,9 +13,16 @@ Hints:
   just like in HTML. In the slide, I have it set to 40px
  */
 
+//   function logoImage(){
+//     return (
+//         <img src="/pex.jpg" alt="Logo" />
+//     );
+// }
+
 function Navbar(){
     return (
         <div>
+            <img src="./react-logo.png" width="80px" />
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
@@ -32,6 +39,7 @@ function Navbar(){
 console.log(Navbar)
 ReactDOM.render(
     <div>
+        <logoImage />
         <Navbar />
     </div>,
     document.getElementById("root")
