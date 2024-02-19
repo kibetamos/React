@@ -12,26 +12,24 @@ Hints:
 * You can also set the `width` attribute of the image element
   just like in HTML. In the slide, I have it set to 40px
  */
-function MainContent() {
-    return (
-        <h1>I'm learning React!</h1>
-    )
-}
-
 
 function Navbar(){
-    return(
+    return (
         <div>
-        <ul>home 1</ul>
-        <ul>home 2</ul>
-        <ul>home 3</ul>
-    </div>
-
-    )
+            <h1>Fun facts about React</h1>
+            <ul>
+                <li>Was first released in 2013</li>
+                <li>Originally created by Jordan Walke</li>
+                <li>Has well over 100k stars on GitHub</li>
+                <li>Maintained by Facebook</li>
+                <li>Powers thousands of enterprise apps</li>
+            </ul>
+        </div>
+    );
 }
 
 
-// // console.log(home)
+console.log(Navbar)
 ReactDOM.render(
     <div>
         <Navbar />
