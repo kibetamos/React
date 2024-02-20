@@ -76,7 +76,7 @@ Challenge:
   For practice, add a new class to the image in order to style it
 */
 
-// import Header from "./Header";
+import Header from "./Header";
 
 // function Header() {
 //     return (
@@ -103,7 +103,6 @@ function Page(){
     )
 }
 
-
 function MainComponent(){
     return(
         <div>
@@ -125,6 +124,7 @@ Challenge: move the Footer and MainContent components
 into their own files.
 */
 function Footer(){
+
     return(
         <small className="footer"><small>© 2024  Kibet development. All rights reserved.</small></small>
 
