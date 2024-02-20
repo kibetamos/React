@@ -75,6 +75,9 @@ Challenge:
 - Change the image styling to happen in CSS instead of in-line
   For practice, add a new class to the image in order to style it
 */
+
+import Header from "./Header"
+
 function Header() {
     return (
         <header>
