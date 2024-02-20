@@ -23,3 +23,10 @@ body {
   display: flex;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #21222A;
+  height: 90px;
+  padding: 30px 25px;
+}
