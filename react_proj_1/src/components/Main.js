@@ -3,7 +3,7 @@ import React from "react"
 export default function Main() {
     return(
         <div>
-                <h1>FunnFacts about React</h1>
+                <h1>Fun Facts about React</h1>
             <ol>
                 <li>Popularity </li>
                 <li>Declarative Syntax </li>
