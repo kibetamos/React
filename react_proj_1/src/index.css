@@ -18,4 +18,8 @@ code {
 body {
   margin: 0;
 }
+.nav-items > li {
+  padding: 10px;
+  display: flex;
+}
 

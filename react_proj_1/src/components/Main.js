@@ -1,5 +1,18 @@
 import React from "react"
 
 export default function Main() {
-    return <h1>Main component</h1>
+    return(
+        <div>
+                <h1>FunnFacts about React</h1>
+            <ol>
+                <li>Popularity </li>
+                <li>Declarative Syntax </li>
+                <li>Virtual DOM </li>
+                <li>Ecosystem</li>
+                <li>Backed by Facebook</li>
+                <li>Learning Opportunities</li>
+            </ol>
+        </div>
+
+    )
 }
