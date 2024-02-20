@@ -78,20 +78,20 @@ Challenge:
 
 // import Header from "./Header";
 
-function Header() {
-    return (
-        <header>
-            <nav className="nav">
-            <img src="./react-logo.png" className="nav-logo" />
-                <ul className= "nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
+// function Header() {
+//     return (
+//         <header>
+//             <nav className="nav">
+//             <img src="./react-logo.png" className="nav-logo" />
+//                 <ul className= "nav-items">
+//                     <li>Pricing</li>
+//                     <li>About</li>
+//                     <li>Contact</li>
+//                 </ul>
+//             </nav>
+//         </header>
+//     )
+// }
 
 function Page(){
     return(
@@ -120,6 +120,10 @@ function MainComponent(){
 
     )
 }
+/**
+Challenge: move the Footer and MainContent components
+into their own files.
+*/
 function Footer(){
     return(
         <small className="footer"><small>© 2024  Kibet development. All rights reserved.</small></small>
