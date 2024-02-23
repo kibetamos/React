@@ -20,5 +20,8 @@ Notes:
   this data into the component.
 */
 export default function Card(){
+    return(
+        <h1></h1>
+    )
 
 }
