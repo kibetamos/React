@@ -24,10 +24,10 @@ export default function Card(){
         <div className="card">
           <img src="./images/zaf.png" className="card--image" />
           <div className="card--stats">
-            <img src = "./images/star.png" />
+            <img src = "./images/star.png" className="card--star"/>
             <span>5.0</span>
-            <span>(6) .</span>
-            <span>USA</span>
+            <span className="gray">(6) .</span>
+            <span className="gray">USA</span>
           </div>
           <P>Life lessons with Katie Zaferes</P>
           <p>From $136 /person</p>
