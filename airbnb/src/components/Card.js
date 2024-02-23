@@ -21,7 +21,9 @@ Notes:
 */
 export default function Card(){
     return(
-        <h1></h1>
+        <h1>
+          <img src="" />
+        </h1>
     )
 
 }
