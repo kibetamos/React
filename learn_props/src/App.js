@@ -1,4 +1,5 @@
 import React from "react"
+import Contact from "./components/Contact";
 import './style.css';
 /* Challenge:
 
@@ -11,9 +12,7 @@ import './style.css';
 function App() {
     return (
         <div className="contacts">
-        
-
-            
+            < Contact />
             <div className="contact-card">
                 <img src="./images/fluffykins.png"/>
                 <h3>Fluffykins</h3>
