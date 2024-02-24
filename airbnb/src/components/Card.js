@@ -29,7 +29,7 @@ export default function Card(){
             <span className="gray">(6) .</span>
             <span className="gray">USA</span>
           </div>
-          <p>Life lessons with Katie Zaferes</p>
+          <h2>Life lessons with Katie Zaferes</h2>
           <p><span className="bold">From $136</span> / person</p>
         </div>
     )
