@@ -25,10 +25,14 @@ export default function Card(){
           <img 
           src="./images/zaf.png" 
           className="card--image" 
-          alt="Image of Katie Zafres swimming"
+          alt="IMain Card image"
           />
           <div className="card--stats">
-            <img src = "./images/star.png" className="card--star"/>
+            <img 
+            src = "./images/star.png" 
+            className="card--star"
+            alt="Star icon. "
+            />
             <span>5.0</span>
             <span className="gray">(6) .</span>
             <span className="gray">USA</span>
