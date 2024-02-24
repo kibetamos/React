@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default Contact(){
+export default function Contact(){
     return(
         <div className="contact-card">
         <img src="./images/mr-whiskerson.png"/>
