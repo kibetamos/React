@@ -11,7 +11,7 @@ import './style.css';
 
 function App() {
     return (
-        <div className="contacts">
+        <div className="jokes">
              <Contact 
                 img="./images/mr-whiskerson.png"
                 name="Mr. Whiskerson"
