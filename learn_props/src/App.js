@@ -12,8 +12,22 @@ import './style.css';
 function App() {
     return (
         <div className="contacts">
+            < Contact 
+            img src="./images/fluffykins.png"
+            name = "Fluffykins"
+            email = 'fluff@me.com'
+            phone = '(212) 555-2345'
+            />
+            {/* < Contact />
             < Contact />
-            <div className="contact-card">
+            < Contact /> */}
+        </div>
+    )
+}
+
+export default App
+
+{/* <div className="contact-card">
                 <img src="./images/fluffykins.png"/>
                 <h3>Fluffykins</h3>
                 <div className="info-group">
@@ -50,10 +64,4 @@ function App() {
                     <img src="./images/mail-icon.png" />
                     <p>pumpkin@scrimba.com</p>
                 </div>
-            </div>
-            
-        </div>
-    )
-}
-
-export default App
+            </div> */}
