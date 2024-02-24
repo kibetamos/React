@@ -12,15 +12,28 @@ import './style.css';
 function App() {
     return (
         <div className="contacts">
+            <Contact />
             < Contact 
             img src="./images/fluffykins.png"
             name = "Fluffykins"
             email = 'fluff@me.com'
             phone = '(212) 555-2345'
             />
-            {/* < Contact />
-            < Contact />
-            < Contact /> */}
+
+            < Contact 
+            img src="./images/felix.png"
+            name = "Felix"
+            email = 'thecat@hotmail.com'
+            phone = '(212) 555-4567'
+            />
+
+            < Contact 
+            
+            img src="./images/pumpkin.png"
+            name = "Pumpkin"
+            email = 'pumpkin@scrimba.com'
+            phone = '(0800) CAT KING'
+            />
         </div>
     )
 }
