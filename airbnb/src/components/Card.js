@@ -22,7 +22,11 @@ Notes:
 export default function Card(){
     return(
         <div className="card">
-          <img src="./images/zaf.png" className="card--image" />
+          <img 
+          src="./images/zaf.png" 
+          className="card--image" 
+          alt="Image of Katie Zafres swimming"
+          />
           <div className="card--stats">
             <img src = "./images/star.png" className="card--star"/>
             <span>5.0</span>
