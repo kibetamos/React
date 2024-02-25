@@ -5,6 +5,10 @@ import './style.css';
 function App() {
     return (
         <div className="jokes">
+            <Joke 
+                punchline="It’s hard to explain puns to kleptomaniacs because they always take things literally."
+            />
+
              <Joke
              setup = "I got my daughter a fridge for her birthday."
              punchline="I can't wait to see her face light up when she opens it." 
