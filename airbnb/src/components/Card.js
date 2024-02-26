@@ -20,7 +20,7 @@ Notes:
   this data into the component.
 */
 export default function Card(props){
-  console.log(props)
+  // console.log(props)
     return(
         <div className="card">
           <img 
