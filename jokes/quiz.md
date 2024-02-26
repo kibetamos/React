@@ -17,4 +17,4 @@ that can be displayed on the page.
 It makes our code more "self-sustaining" - not requiring
 additional changes whenever the data changes.
 
-for(let i = 0; i
+<!-- for(let i = 0; i -->
