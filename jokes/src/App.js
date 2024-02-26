@@ -1,6 +1,14 @@
 import React from "react"
 import Joke from "./components/Joke";
 import './style.css';
+/*
+Challenge: Think critically - how would you pass in a prop that wasn't
+a string datatype.
+
+E.g. Say you want each Joke component to receive an "upvotes" and "downvotes"
+prop that is a number, as well as a prop with an array of comments, and a boolean
+of whether the joke is a pun (`isPun`).
+*/
 
 function App() {
     return (
