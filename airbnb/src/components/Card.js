@@ -24,7 +24,7 @@ export default function Card(props){
     return(
         <div className="card">
           <img 
-          src={props.img}
+          src={`../images/${props.img}`}
           className="card--image" 
           alt="IMain Card image"
           />
