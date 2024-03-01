@@ -50,6 +50,7 @@ export default function App() {
           country = "USA"
           title = "Life Lessons with Katie Zaferes"
           price = "136"
+          
           />
         </div>
     )
