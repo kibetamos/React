@@ -41,18 +41,34 @@ still be block elements, stacked vertically. We'll add styling later.
 
 
 export default function App() {
+
+  const cards = data.map(item => {
+    return (
+        <Card 
+            img={item.coverImg}
+            rating={item.stats.rating}
+            reviewCount={item.stats.reviewCount}
+            location={item.location}
+            title={item.title}
+            price={item.price}
+        />
+    )
+}) 
+
+
     return (
         <div>
           <Navbar />
-          <Hero />
+          {cards}
+          {/* <Hero />
           <Card 
           img = "./images/zaf.png"
           reviewCount = "(6)"
-          country = "USA"
+          location = "USA"
           title = "Life Lessons with Katie Zaferes"
-          price = "136"
+          price = "136" */}
 
-          />
+          {/* /> */}
         </div>
     )
 }
