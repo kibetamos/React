@@ -59,16 +59,9 @@ export default function App() {
     return (
         <div>
           <Navbar />
-          {cards}
-          {/* <Hero />
-          <Card 
-          img = "./images/zaf.png"
-          reviewCount = "(6)"
-          location = "USA"
-          title = "Life Lessons with Katie Zaferes"
-          price = "136" */}
-
-          {/* /> */}
+          <section className="cards-list">
+                {cards}
+            </section>
         </div>
     )
 }

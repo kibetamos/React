@@ -59,6 +59,16 @@ font-size: 0.75rem;
  align-items: center;
 
 }
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+}
+
+
 .card--inmage{
   width: 100%;
   border-radius: 9px;
