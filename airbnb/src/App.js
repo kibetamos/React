@@ -46,13 +46,14 @@ export default function App() {
     return (
         <Card 
             key={item.id}
-            item = {item}
+            {...item}
         />
     )
 }) 
     return (
         <div>
           <Navbar />
+          <Hero />
           <section className="cards-list">
                 {cards}
             </section>
