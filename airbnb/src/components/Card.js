@@ -14,6 +14,7 @@ export default function Card(props) {
             </div>
             <p className="card--title">{props.title}</p>
             <p className="card--price"><span className="bold">From ${props.price}</span> / person</p>
+            {/* <p className="">{props.price}</p> */}
         </div>
     )
 }
