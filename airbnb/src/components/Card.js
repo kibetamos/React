@@ -9,7 +9,6 @@ export default function Card(props) {
     }
   // console.log(props.openSpots)
 
-  
    /*
     Challenge:
     1. Display the correct text in the badge based on the logic above
