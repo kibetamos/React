@@ -24,7 +24,7 @@ export default function Meme() {
                 </div>
                 <button
                     className="form--button"
-                >
+                    >
                     Get a new meme image 🖼
                 </button>
             </form>
