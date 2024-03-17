@@ -5,13 +5,13 @@ export default function Meme() {
         <main>
             <form className="form">
                 <div>
-                    <label>Top Text
-                        <input
-                            type="text"
-                            placeholder="Shut up"
-                            className="form--input"
-                        />
-                    </label>
+                    <label htmlFor="top-text">Top Text</label>
+                    <input
+                        id="top-text"
+                        type="text"
+                        placeholder="Shut up"
+                        className="form--input"
+                    />
                 </div>
                 <div>
                     <label>Bottom Text
