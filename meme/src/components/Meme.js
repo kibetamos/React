@@ -10,6 +10,7 @@ export default function Meme() {
      * about displaying the image yet)
      */
     function getMemeImage(){
+        
         console.log('Clicked ')
     }
     return (
