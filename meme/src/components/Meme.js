@@ -9,6 +9,9 @@ export default function Meme() {
      * Log the URL of the image to the console. (Don't worry
      * about displaying the image yet)
      */
+    function getMemeImage(){
+        console.log('Clicked ')
+    }
     return (
         <main>
             <div className="form">
