@@ -9,9 +9,10 @@ export default function Meme() {
      * Log the URL of the image to the console. (Don't worry
      * about displaying the image yet)
      */
-    function getMemeImage(){
-        
-        console.log('Clicked ')
+    function getMemeImage() {
+        const memesArray = memesData.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        console.log(randomNumber)
     }
     return (
         <main>
