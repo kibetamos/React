@@ -12,11 +12,11 @@ export default function Meme() {
     let url
 
     function getMemeImage() {
-        
+
         const memesArray = memesData.data.memes
-    
-        // console.log(randomNumber)
+
         const url = memesArray[randomNumber].url
+        
         console.log(url)
     }
     return (
