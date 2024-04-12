@@ -12,6 +12,7 @@ export default function Meme() {
     let url
 
     function getMemeImage() {
+        
         const memesArray = memesData.data.memes
     
         // console.log(randomNumber)
