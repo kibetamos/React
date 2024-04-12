@@ -9,21 +9,26 @@ export default function Meme() {
      * Log the URL of the image to the console. (Don't worry
      * about displaying the image yet)
      */
+    let url
+
     function getMemeImage() {
         const memesArray = memesData.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
-        console.log(randomNumber)
-        // const url = memesArray[randomNumber].url
-        // console.log(url)
+        // console.log(randomNumber)
+        const url = memesArray[randomNumber].url
+        console.log(url)
     }
     return (
         <main>
+            <p>{url}</p>
             <div className="form">
+                
                 <input 
                     type="text"
                     placeholder="Top text"
                     className="form--input"
                 />
+
                 <input 
                     type="text"
                     placeholder="Bottom text"
