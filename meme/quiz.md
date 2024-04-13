@@ -4,10 +4,12 @@ This is similar to declaring variables from within a component,
 with a few added bonuses (which we'll get to later).
 
 
+
 2. When would you want to use props instead of state?
 Anytime you want to pass data into a component so that
 component can determine what will get displayed on the
 screen.
+
 
 
 3. When would you want to use state instead of props?
