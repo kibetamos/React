@@ -14,6 +14,9 @@ screen.
 
 3. When would you want to use state instead of props?
 
+Anytime you want a component to maintain some values from
+within the component. (And "remember" those values even
+when React re-renders the component).
 
 
 4. What does "immutable" mean? Are props immutable? Is state immutable?
