@@ -18,8 +18,6 @@ export default function App() {
     setIsImportant("No")
     
  }
-
- 
 //   console.log(result) 
     return (
         <div className="state">
@@ -29,8 +27,6 @@ export default function App() {
                 <h1>{isImportant}</h1>
 
             </div>
-
-
         </div>
 
     )
