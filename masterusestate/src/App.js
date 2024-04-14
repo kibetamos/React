@@ -16,6 +16,7 @@ export default function App() {
 
  function handleClick(){
     setIsImportant("No")
+    
  }
 
 //   console.log(result) 
