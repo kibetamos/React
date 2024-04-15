@@ -13,10 +13,8 @@ export default function App() {
      * 2. add a click event listener to the div.state--value
      *    that runs `handleClick` when the div is clicked.
      */
-
  function handleClick(){
-    setIsImportant("No")
-    
+    setIsImportant("No") 
  }
 //   console.log(result) 
     return (
@@ -25,10 +23,7 @@ export default function App() {
             <h1 className="state--title">Is state important to know?</h1>
             <div className="state--value" onClick={handleClick}>
                 <h1>{isImportant}</h1>
-
             </div>
         </div>
-
     )
-
 }
