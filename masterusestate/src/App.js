@@ -42,6 +42,7 @@ export default function App() {
     function add(){
 
         console.log('add')
+        setCount(count = count+1)
 
     }
 
