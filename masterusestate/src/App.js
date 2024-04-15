@@ -60,10 +60,13 @@ export default function App() {
     }
 
     // Challenge: update `substract` to use a callback function
-    
+
     function minus(){
 
-        setCount(count - 1)
+        // setCount(count - 1)
+        // Adding callback function
+
+        setCount(prevCount => prevCount -1)
     }
 
     return (
