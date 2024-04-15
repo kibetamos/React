@@ -8,8 +8,11 @@
 2. When would you want to pass the first option (from answer
    above) to the state setter function?
 
+    Whenever you don't need the previous value of state to determine
+    what the new value of state should be.
 
 
 3. When would you want to pass the second option (from answer
    above) to the state setter function?
 
+    Whenever you DO need the previous value to determine the new value
