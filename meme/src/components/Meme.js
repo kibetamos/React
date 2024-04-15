@@ -9,15 +9,31 @@ export default function Meme() {
      * Log the URL of the image to the console. (Don't worry
      * about displaying the image yet)
      */
+
+//  CHALENGE 2
+        /**
+     * Challenge: Save the random meme URL in state
+     * - Create new state called `memeImage` with an
+     *   empty string as default
+     * - When the getMemeImage function is called, update
+     *   the `memeImage` state to be the random chosen
+     *   image URL
+     * - Below the div.form, add an <img /> and set the
+     *   src to the new `memeImage` state you created
+     */
     let url
 
     function getMemeImage() {
 
         const memesArray = memesData.data.memes
-
-        const url = memesArray[randomNumber].url
         
-        console.log(url)
+
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        // memesArray[randomNumber].url  <-- this line is incomplete!
+        
+        // const url = memesArray[randomNumber].url
+        
+        console.log(randomNumber)
     }
     return (
         <main>
