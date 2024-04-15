@@ -46,12 +46,13 @@ export default function App() {
 
     }
 
-    function handleClickNegative(){
+    function minus(){
 
+        setCount(count - 1)
     }
     return (
         <div className="counter">
-            <button className="counter--minus" onClick={handleClickNegative}>–</button>
+            <button className="counter--minus" onClick={minus}>–</button>
             <div className="counter--count">
                 <h1>{count}</h1>
             </div>
