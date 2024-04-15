@@ -50,6 +50,7 @@ export default function App() {
 
         setCount(count - 1)
     }
+    
     return (
         <div className="counter">
             <button className="counter--minus" onClick={minus}>–</button>
