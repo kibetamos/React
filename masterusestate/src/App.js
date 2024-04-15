@@ -29,17 +29,32 @@ export default function App() {
 // }
 
 
-
+// CHALLENGE 2 
     /**
-     * Challenge: Set up state to track our count (initial value is 0)
+     * Challenge: 
+     * See if you can think of a way to add 1 to the count
+     * every time the + button is clicked
      */
+
+    const [count, setCount] = React.useState("0")
+    console.log(count)
+
+    function add(){
+
+        console.log('add')
+
+    }
+
+    function handleClickNegative(){
+
+    }
     return (
         <div className="counter">
-            <button className="counter--minus">–</button>
+            <button className="counter--minus" onClick={handleClickNegative}>–</button>
             <div className="counter--count">
-                <h1>0</h1>
+                <h1>{count}</h1>
             </div>
-            <button className="counter--plus">+</button>
+            <button className="counter--plus" onClick={add}>+</button>
         </div>
     )
 }
