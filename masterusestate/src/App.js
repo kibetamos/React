@@ -36,13 +36,13 @@ export default function App() {
      * every time the + button is clicked
      */
 
-    const [count, setCount] = React.useState("0")
+    const [count, setCount] = React.useState(0)
     console.log(count)
 
     function add(){
 
-        console.log('add')
-        setCount(count = count+1)
+        // console.log('add')
+        setCount(count + 1)
 
     }
 
