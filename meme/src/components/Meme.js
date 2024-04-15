@@ -26,8 +26,6 @@ export default function Meme() {
     function getMemeImage() {
 
         const memesArray = memesData.data.memes
-        
-
         const randomNumber = Math.floor(Math.random() * memesArray.length)
         // memesArray[randomNumber].url  <-- this line is incomplete!
         
