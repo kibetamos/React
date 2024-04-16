@@ -103,7 +103,7 @@ export default function App() {
 
 
     const isBuyingLand = true
-    let vote = isBuyingLand ? 'Buying Land': 'Not Buying'; 
+    // let vote = isBuyingLand ? 'Buying Land': 'Not Buying'; 
 
     const isGoingOut = false
     
@@ -118,8 +118,13 @@ export default function App() {
         <div className="state">
             <h1 className="state--title">Do I feel like going out tonight?</h1>
             <div className="state--value">
-                <h1>{isGoingOut ? 'Yes' : 'No'}</h1>
-                {/* <h1>{isBuyingLand ? 'Buy': 'Not Bu'}</h1> */}
+                {/* <h1>{isGoingOut ? 'Yes' : 'No'}</h1> */}
+                <h1>{isBuyingLand ? 'Buy': 'NotBu'}</h1>
+            </div>
+
+            <div className="state--value">
+                <h1>{isGoingOut ? 'Yes' : 'No'}</h1>s
+                {/* <h1>{isBuyingLand ? 'Buy': 'NotBu'}</h1> */}
             </div>
         </div>
     )
