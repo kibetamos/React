@@ -142,7 +142,7 @@ body {
     cursor: pointer;
 }
 
-.state--value-1 {
+/* .state--value-1 {
     background-color: rgb(213, 197, 197);
     height: 100px;
     width: 100px;
@@ -152,4 +152,4 @@ body {
     align-items: center;
     color: #262626;
     cursor: pointer;
-}
+} */
