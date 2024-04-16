@@ -1,6 +1,6 @@
-import React from "react"
+// import React from "react"
 
-export default function App() {
+// export default function App() {
 //   // const state = "Yes"
 // //   lets do array destructuirng
 //   const [isImportant, setIsImportant] = React.useState("Yes")
@@ -36,10 +36,10 @@ export default function App() {
      * every time the + button is clicked
      */
 
-    const [count, setCount] = React.useState(0)
-    console.log(count)
+    // const [count, setCount] = React.useState(0)
+    // console.log(count)
 
-    function add(){
+    // function add(){
 
         // console.log('add')
         // setCount(count + 1)
@@ -55,27 +55,56 @@ export default function App() {
      * which you can then use to determine your new
      * value of state.
      */
-        setCount(prevCount => prevCount + 1)
+//         setCount(prevCount => prevCount + 1)
 
+//     }
+
+//     // Challenge: update `substract` to use a callback function
+
+//     function minus(){
+
+//         // setCount(count - 1)
+//         // Adding callback function
+
+//         setCount(prevCount => prevCount -1)
+//     }
+
+//     return (
+//         <div className="counter">
+//             <button className="counter--minus" onClick={minus}>–</button>
+//             <div className="counter--count">
+//                 <h1>{count}</h1>
+//             </div>
+//             <button className="counter--plus" onClick={add}>+</button>
+//         </div>
+//     )
+// }
+
+// CHALLENGE 3
+
+
+import React from "react"
+
+export default function App() {
+    /**
+     * Challenge: Replace the if/else below with a ternary
+     * to determine the text that should display on the page
+     */
+    const isGoingOut = true
+    
+    let answer  // Use ternary here
+    if(isGoingOut === true) {
+        answer = "Yes"
+    } else {
+        answer = "No"
     }
-
-    // Challenge: update `substract` to use a callback function
-
-    function minus(){
-
-        // setCount(count - 1)
-        // Adding callback function
-
-        setCount(prevCount => prevCount -1)
-    }
-
+    
     return (
-        <div className="counter">
-            <button className="counter--minus" onClick={minus}>–</button>
-            <div className="counter--count">
-                <h1>{count}</h1>
+        <div className="state">
+            <h1 className="state--title">Do I feel like going out tonight?</h1>
+            <div className="state--value">
+                <h1>{answer}</h1>
             </div>
-            <button className="counter--plus" onClick={add}>+</button>
         </div>
     )
 }
