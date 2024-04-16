@@ -184,12 +184,16 @@ export default function App(){
         // thingsArray.push(newThingText)
         // document.getElementById()
         // console.log(thingsArray)
-
-        setThingsArray(prevThingsArray => [...prevThingsArray, `Thing ${prevThingsArray.length + 1}`])
+        
+        setThingsArray(prevState => {
+            return [...prevState, `Thing ${prevState.length + 1}`]
+        })
     }
+    //     setThingsArray(prevThingsArray => [...prevThingsArray, `Thing ${prevThingsArray.length + 1}`])
+    // }
+    // const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
     
-    const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
-    
+    const thingsElements = thingsArray.map(things => <p key= {things}>{things}</p>)
     return (
         <div>
             <button onClick={addItem}>Add Item</button>
@@ -197,6 +201,5 @@ export default function App(){
         </div>
     )
 }
-
 
 // ReactDOM.render(<App />, document.getElementById('root'));
