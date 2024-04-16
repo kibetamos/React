@@ -93,12 +93,21 @@ export default function App() {
 
     // Another example
 
+
+     /**
+     * Challenge: move our ternary directly inside of the JSX
+     * so the "Yes" and "No" are determined inside the <h1>
+     * 
+     * Hint: you will no longer need the `answer` variable
+     */
+
+
     const isBuyingLand = true
     let vote = isBuyingLand ? 'Buying Land': 'Not Buying'; 
 
     const isGoingOut = false
     
-    let answer  = isGoingOut ? 'Yes' : 'No';// Use ternary here
+    // let answer  = isGoingOut ? 'Yes' : 'No';// Use ternary here
     // if(isGoingOut === true) {
     //     answer = "Yes"
     // } else {
@@ -109,8 +118,8 @@ export default function App() {
         <div className="state">
             <h1 className="state--title">Do I feel like going out tonight?</h1>
             <div className="state--value">
-                <h1>{answer}</h1>
-                
+                <h1>{isGoingOut ? 'Yes' : 'No'}</h1>
+                {/* <h1>{isBuyingLand ? 'Buy': 'Not Bu'}</h1> */}
             </div>
         </div>
     )
