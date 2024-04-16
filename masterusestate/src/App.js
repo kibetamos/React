@@ -90,14 +90,14 @@ export default function App() {
      * Challenge: Replace the if/else below with a ternary
      * to determine the text that should display on the page
      */
-    const isGoingOut = true
+    const isGoingOut = false
     
-    let answer  // Use ternary here
-    if(isGoingOut === true) {
-        answer = "Yes"
-    } else {
-        answer = "No"
-    }
+    let answer  = isGoingOut ? 'Yes' : 'No';// Use ternary here
+    // if(isGoingOut === true) {
+    //     answer = "Yes"
+    // } else {
+    //     answer = "No"
+    // }
     
     return (
         <div className="state">
