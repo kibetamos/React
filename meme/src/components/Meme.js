@@ -22,17 +22,20 @@ export default function Meme() {
      *   src to the new `memeImage` state you created
      */
     let url
-    
+    const [memeImage, setMemeImage] = React.useState("")
+
+
 
     function getMemeImage() {
 
         const memesArray = memesData.data.memes
+        
         const randomNumber = Math.floor(Math.random() * memesArray.length)
         // memesArray[randomNumber].url  <-- this line is incomplete!
         
         // const url = memesArray[randomNumber].url
-        
-        console.log(randomNumber)
+        setMemeImage(randomNumber)
+        console.log(setMemeImage)
     }
     return (
         <main>
