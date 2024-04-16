@@ -122,7 +122,7 @@ export default function App() {
                 <h1>{isBuyingLand ? 'Buy': 'NotBu'}</h1>
             </div>
 
-            <div className="state--value">
+            <div className="state--value-1">
                 <h1>{isGoingOut ? 'Yes' : 'No'}</h1>s
                 {/* <h1>{isBuyingLand ? 'Buy': 'NotBu'}</h1> */}
             </div>

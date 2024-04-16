@@ -131,7 +131,19 @@ body {
 }
 
 .state--value {
-    background-color: white;
+    background-color: rgb(64, 14, 14);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+    cursor: pointer;
+}
+
+.state--value-1 {
+    background-color: rgb(213, 197, 197);
     height: 100px;
     width: 100px;
     border-radius: 50%;
