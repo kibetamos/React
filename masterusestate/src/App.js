@@ -133,29 +133,65 @@
 
 //CHALLENGE 4
 
-import React from "react"
+// import React from "react"
+
+// export default function App() {
+//     /**
+//      * Challenge: 
+//      * - Initialize state for `isGoingOut` as a boolean
+//      * - Make it so clicking the div.state--value flips that
+//      *   boolean value (true -> false, false -> true)
+//      * - Display "Yes" if `isGoingOut` is `true`, "No" otherwise
+//      */
+
+//     const [isGoingOut, setIsGoingOut] = React.useState(true)
+    
+//     // const isGoingOut = false
+//     function changeMind(){
+//         setIsGoingOut(prevState => !prevState)
+//     }
+//     return (
+//         <div className="state">
+//             <h1 className="state--title">Do I feel like going out tonight?</h1>
+//             <button className="state--value" onClick={changeMind}>
+//                 {isGoingOut ? 'Yes' : 'No'}
+//             </button>
+//         </div>
+//     )
+// }
+
+
+// COMPLEX ARRAYS
+
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 export default function App() {
     /**
-     * Challenge: 
-     * - Initialize state for `isGoingOut` as a boolean
-     * - Make it so clicking the div.state--value flips that
-     *   boolean value (true -> false, false -> true)
-     * - Display "Yes" if `isGoingOut` is `true`, "No" otherwise
+     * Challenge: Convert the code below to use an array
+     * held in state instead of a local variable. Initialize 
+     * the state array with the same 2 items below
+     * 
+     * Don't worry about fixing `addItem` quite yet.
      */
-
-    const [isGoingOut, setIsGoingOut] = React.useState(true)
+    const thingsArray = ["Thing 1", "Thing 2"]
     
-    // const isGoingOut = false
-    function changeMind(){
-        setIsGoingOut(prevState => !prevState)
+    function addItem() {
+        // We'll work on this next
+        // const newThingText = `Thing ${thingsArray.length + 1}`
+        // thingsArray.push(newThingText)
+        // document.getElementById()
+        // console.log(thingsArray)
     }
+    
+    const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
+    
     return (
-        <div className="state">
-            <h1 className="state--title">Do I feel like going out tonight?</h1>
-            <button className="state--value" onClick={changeMind}>
-                {isGoingOut ? 'Yes' : 'No'}
-            </button>
+        <div>
+            <button onClick={addItem}>Add Item</button>
+            {thingsElements}
         </div>
     )
 }
+
+ReactDOM.render(<App />, document.getElementById('root'));
