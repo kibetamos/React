@@ -121,7 +121,6 @@ export default function App() {
                 {/* <h1>{isGoingOut ? 'Yes' : 'No'}</h1> */}
                 <h1>{isBuyingLand ? 'Buy': 'NotBu'}</h1>
             </div>
-
             <div className="state--value-1">
                 <h1>{isGoingOut ? 'Yes' : 'No'}</h1>
                 {/* <h1>{isBuyingLand ? 'Buy': 'NotBu'}</h1> */}
