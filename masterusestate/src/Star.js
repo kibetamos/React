@@ -17,13 +17,13 @@ export default function  Star(props){
         onClick={props.handleClick}
         >
         <img 
-                        src={`../images/${starIcon}`} 
-                        alt="star icon."
-                        className="card--favorite"
+                    src={`../images/${starIcon}`} 
+                    alt="star icon."
+                    className="card--favorite"
                         
                     />
 
-</button>
+        </button>
     )
 
 
