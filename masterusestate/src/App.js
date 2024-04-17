@@ -255,10 +255,10 @@ export default function App() {
                         onClick={toggleFavorite}
                     />
                     <h2 className="card--name">
-                        John Doe
+                        {contact.firstName} {contact.lastName}
                     </h2>
-                    <p className="card--contact">+1 (719) 555-1212</p>
-                    <p className="card--contact">itsmyrealname@example.com</p>
+                    <p className="card--contact">{contact.phone}</p>
+                    <p className="card--contact">{contact.email}</p>
                 </div>
                 
             </article>
