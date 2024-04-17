@@ -12,11 +12,18 @@ export default function  Star(props){
     const starIcon = props.isFilled ? "star-filled.png" : "star-empty.png"
 
     return(
+        <button
+        aria-label={buttonLabel}
+        onClick={props.handleClick}
+        >
         <img 
                         src={`../images/${starIcon}`} 
+                        alt="star icon."
                         className="card--favorite"
-                        onClick={props.handleClick}
+                        
                     />
+
+</button>
     )
 
 
