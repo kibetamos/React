@@ -239,6 +239,18 @@ export default function App() {
      * using the properties of our state object above
      * (Ignore `isFavorite` for now)
      */
+        /**
+     * Challenge: Use a ternary to determine which star image filename
+     * should be used based on the `contact.isFavorite` property
+     * 
+     * `true` => "star-filled.png"
+     * `false` => "star-empty.png"
+     */
+    let starIcon = contact.isFavorite ? "star-filled.png" : "star-empty.png"
+    
+    // function toggleFavorite() {
+    //     console.log("Toggle Favorite")
+    // }
     
     function toggleFavorite() {
         console.log("Toggle Favorite")
@@ -250,7 +262,7 @@ export default function App() {
                 <img src="./images/user.png" className="card--image" />
                 <div className="card--info">
                     <img 
-                        src={`../images/star-empty.png`} 
+                        src={`../images/${starIcon}`} 
                         className="card--favorite"
                         onClick={toggleFavorite}
                     />
