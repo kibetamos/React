@@ -204,33 +204,6 @@ export default function App(){
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // //create a state
 // const [things, setThings] = React.useState(['T1','T2'])
 
