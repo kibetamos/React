@@ -253,6 +253,11 @@ export default function App() {
     // }
     
     function toggleFavorite() {
+        setContact(prevContact => {
+            return{...prevContact,
+                isFavorite: !prevContact.isFavorite
+            }
+        })
         console.log("Toggle Favorite")
     }
     
