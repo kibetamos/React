@@ -21,23 +21,47 @@ export default function Meme() {
      * - Below the div.form, add an <img /> and set the
      *   src to the new `memeImage` state you created
      */
+
+/**
+     * Challenge: 
+     * Update our state to save the meme-related
+     * data as an object called `meme`. It should have the
+     * following 3 properties:
+     * topText, bottomText, randomImage.
+     * 
+     * The 2 text states can default to empty strings for now,
+     * amd randomImage should default to "http://i.imgflip.com/1bij.jpg"
+     * 
+     * Next, create a new state variable called `allMemeImages`
+     * which will default to `memesData`, which we imported above
+     * 
+     * Lastly, update the `getMemeImage` function and the markup 
+     * to reflect our newly reformed state object and array in the
+     * correct way.
+     */
+
     let url
-    const [memeImage, setMemeImage] = React.useState("")
+    const [meme, setMeme] = React.useState({
+        topText: "",
+        bottomText:"",
+        randomImage : "http://i.imgflip.com/1bij.jpg"
+    })
 
-
+    const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
     function getMemeImage() {
-
-        const memesArray = memesData.data.memes
-
+       
+        const memesArray = allMemeImages.data.memes
+       
         const randomNumber = Math.floor(Math.random() * memesArray.length)
-        // memesArray[randomNumber].url  
+       
+        const url = memesArray[randomNumber].url
+       
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            randomImage: url
+        }))
         
-        // <-- this line is incomplete!
-        
-        // const url = memesArray[randomNumber].url
-        setMemeImage(memesArray[randomNumber].url)
-        console.log(memesArray[randomNumber].url)
     }
     return (
         <main>
@@ -62,7 +86,7 @@ export default function Meme() {
                     Get a new meme image 🖼
                 </button>
             </div>
-            <img src={memeImage} className="memes--image"/>
+            <img src={meme.randomImage} className="memes--image"/>
         </main>
     )
 }
