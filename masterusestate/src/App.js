@@ -163,44 +163,44 @@
 
 // COMPLEX ARRAYS
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 
-// imports
+// // imports
 
-export default function App(){
-    /**
-     * Challenge: Convert the code below to use an array
-     * held in state instead of a local variable. Initialize 
-     * the state array with the same 2 items below
-     * 
-     * Don't worry about fixing `addItem` quite yet.
-     */
-    const [thingsArray, setThingsArray] = React.useState(["Thing 1", "Thing 2"])
+// export default function App(){
+//     /**
+//      * Challenge: Convert the code below to use an array
+//      * held in state instead of a local variable. Initialize 
+//      * the state array with the same 2 items below
+//      * 
+//      * Don't worry about fixing `addItem` quite yet.
+//      */
+//     const [thingsArray, setThingsArray] = React.useState(["Thing 1", "Thing 2"])
     
-    function addItem() {
-        // We'll work on this next
-        // const newThingText = `Thing ${thingsArray.length + 1}`
-        // thingsArray.push(newThingText)
-        // document.getElementById()
-        // console.log(thingsArray)
+//     function addItem() {
+//         // We'll work on this next
+//         // const newThingText = `Thing ${thingsArray.length + 1}`
+//         // thingsArray.push(newThingText)
+//         // document.getElementById()
+//         // console.log(thingsArray)
         
-        setThingsArray(prevState => {
-            return [...prevState, `Thing ${prevState.length + 1}`]
-        })
-    }
-    //     setThingsArray(prevThingsArray => [...prevThingsArray, `Thing ${prevThingsArray.length + 1}`])
-    // }
-    // const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
+//         setThingsArray(prevState => {
+//             return [...prevState, `Thing ${prevState.length + 1}`]
+//         })
+//     }
+//     //     setThingsArray(prevThingsArray => [...prevThingsArray, `Thing ${prevThingsArray.length + 1}`])
+//     // }
+//     // const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
     
-    const thingsElements = thingsArray.map(things => <p key= {things}>{things}</p>)
-    return (
-        <div>
-            <button onClick={addItem}>Add Item</button>
-            {thingsElements}
-        </div>
-    )
-}
+//     const thingsElements = thingsArray.map(things => <p key= {things}>{things}</p>)
+//     return (
+//         <div>
+//             <button onClick={addItem}>Add Item</button>
+//             {thingsElements}
+//         </div>
+//     )
+// }
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -220,3 +220,48 @@ export default function App(){
 //  setThingsArray(prevState => {
 //             return [...prevState, `Thing ${prevState.length + 1}`]
 //         })
+
+
+// Challenge when complex state is an object
+
+import React from "react"
+
+export default function App() {
+    const [contact, setContact] = React.useState({
+        firstName: "John",
+        lastName: "Doe",
+        phone: "+1 (719) 555-1212",
+        email: "itsmyrealname@example.com",
+        isFavorite: false
+    })
+    /**
+     * Challenge: Fill in the values in the markup
+     * using the properties of our state object above
+     * (Ignore `isFavorite` for now)
+     */
+    
+    function toggleFavorite() {
+        console.log("Toggle Favorite")
+    }
+    
+    return (
+        <main>
+            <article className="card">
+                <img src="./images/user.png" className="card--image" />
+                <div className="card--info">
+                    <img 
+                        src={`../images/star-empty.png`} 
+                        className="card--favorite"
+                        onClick={toggleFavorite}
+                    />
+                    <h2 className="card--name">
+                        John Doe
+                    </h2>
+                    <p className="card--contact">+1 (719) 555-1212</p>
+                    <p className="card--contact">itsmyrealname@example.com</p>
+                </div>
+                
+            </article>
+        </main>
+    )
+}
