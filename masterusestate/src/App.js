@@ -203,3 +203,47 @@ export default function App(){
 }
 
 // ReactDOM.render(<App />, document.getElementById('root'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //create a state
+// const [things, setThings] = React.useState(['T1','T2'])
+
+// function add(){
+//     setThings(prevthings => [...prevthings, `T ${prevthings.length + 1 }`])
+// }
+// // ...prevState, `Thing ${prevState.length + 1}`]
+// const thingsElements = thingsArray.map(things => <p key= {things}>{things}</p>)
+// return (
+//     {setThings}
+// )
+
+
+//  setThingsArray(prevState => {
+//             return [...prevState, `Thing ${prevState.length + 1}`]
+//         })
