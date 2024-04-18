@@ -216,9 +216,9 @@ main {
     border: 1px solid lightgray;
     border-radius: 10px;
     height: 350px;
-    box-shadow: 5px 5px 5px 1px rgba(209, 11, 11, 0.44);
-    -webkit-box-shadow: 5px 5px 5px 1px rgba(228, 21, 21, 0.44);
-    -moz-box-shadow: 5px 5px 5px 1px rgba(215, 10, 10, 0.44);
+    box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+    -webkit-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+    -moz-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
 }
 
 .card--image {
@@ -239,6 +239,16 @@ main {
 .card--favorite {
     width: 25px;
     cursor: pointer;
+}
+
+.card--favorite-button {
+    border: none;
+    background: transparent;
+}
+
+.card--favorite-button:active {
+    transform: none;
+    box-shadow: none;
 }
 
 .card--contact {
