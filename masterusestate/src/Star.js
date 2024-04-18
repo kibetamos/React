@@ -14,6 +14,7 @@ export default function  Star(props){
     return(
         <button
         aria-label={buttonLabel}
+        
         onClick={props.handleClick}
         >
         <img 
