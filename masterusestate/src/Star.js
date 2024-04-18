@@ -21,7 +21,6 @@ export default function  Star(props){
                 alt="star icon."
                 className="card--favorite"
                 />
-
         </button>
     )
 
