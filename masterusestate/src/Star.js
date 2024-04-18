@@ -14,15 +14,13 @@ export default function  Star(props){
     return(
         <button
         aria-label={buttonLabel}
-        
         onClick={props.handleClick}
         >
-        <img 
-                    src={`../images/${starIcon}`} 
-                    alt="star icon."
-                    className="card--favorite"
-                        
-                    />
+        <img
+                src={`../images/${starIcon}`} 
+                alt="star icon."
+                className="card--favorite"
+                />
 
         </button>
     )
