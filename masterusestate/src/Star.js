@@ -26,6 +26,4 @@ export default function  Star(props){
                 />
         </button>
     )
-
-
 }
