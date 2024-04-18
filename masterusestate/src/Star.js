@@ -9,10 +9,12 @@ export default function  Star(props){
     //     console.log("Pembe")
     // }
 
+    openinstitute.africa/jobs
+
     const starIcon = props.isFilled ? "star-filled.png" : "star-empty.png"
 // const StartIcon = propd.isFilled? "star-filled.png" : "star-empty"
     return(
-        
+
         <button
         aria-label={buttonLabel}
         onClick={props.handleClick}
