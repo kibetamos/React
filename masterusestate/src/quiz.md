@@ -5,7 +5,6 @@
    b. callback function  - whatever the callback function 
    return ==== new vale of state
     
-    
 2. When would you want to pass the first option (from answer
    above) to the state setter function?
 
