@@ -7,6 +7,7 @@ export default function  Star(props){
     //     console.log("Pembe")
     // }
 
+    // Itenary
     const starIcon = props.isFilled ? "star-filled.png" : "star-empty.png"
 // const StartIcon = propd.isFilled? "star-filled.png" : "star-empty"
     const buttonLabel = props.isFilled ? "Unmark as favorite" : "Mark as favorite"
@@ -20,7 +21,7 @@ export default function  Star(props){
             className="card--favorite-button"
         >
         <img
-        
+
                 src={`../images/${starIcon}`} 
                 alt="star icon."
                 className="card--favorite"
