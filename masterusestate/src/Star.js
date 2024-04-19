@@ -13,7 +13,6 @@ export default function  Star(props){
     const buttonLabel = props.isFilled ? "Unmark as favorite" : "Mark as favorite"
 
     return(
-
         <button
             onClick={props.handleClick}
             aria-label={buttonLabel}
