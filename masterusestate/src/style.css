@@ -247,9 +247,12 @@ main {
 }
 
 .card--favorite-button:active {
+
     transform: none;
+
     box-shadow: none;
 }
+
 
 .card--contact {
     font-size: 0.75rem;
