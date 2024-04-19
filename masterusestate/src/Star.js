@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function  Star(props){
-
     // function toggleFavorite(){
     //     console.log("Pembe")
     // }
