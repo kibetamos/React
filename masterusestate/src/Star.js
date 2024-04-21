@@ -4,7 +4,6 @@ export default function  Star(props){
     // function toggleFavorite(){
     //     console.log("Pembe")
     // }
-
     // Itenary
     const starIcon = props.isFilled ? "star-filled.png" : "star-empty.png"
 // const StartIcon = propd.isFilled? "star-filled.png" : "star-empty"
