@@ -4,9 +4,11 @@
    a. New value of state (setCount(42))
    b. callback function  - whatever the callback function 
    return ==== new vale of state
+
     
 2. When would you want to pass the first option (from answer
    above) to the state setter function?
+
 
     Whenever you don't need the previous value of state to determine
     what the new value of state should be.
