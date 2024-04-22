@@ -16,8 +16,9 @@ export default function  Star(props){
             aria-pressed={props.isFilled}
             className="card--favorite-button"
         >
+            
         <img
-        
+
                 src={`../images/${starIcon}`} 
                 alt="star icon."
                 className="card--favorite"
