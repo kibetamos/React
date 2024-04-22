@@ -274,7 +274,6 @@ export default function App() {
         console.log("Toggle Favorite")
     }
     
-
     return (
         <main>
             <article className="card">
