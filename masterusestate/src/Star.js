@@ -17,8 +17,6 @@ export default function  Star(props){
             className="card--favorite-button"
         >
 
-
-            
         <img
 
                 src={`../images/${starIcon}`} 
