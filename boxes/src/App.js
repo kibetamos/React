@@ -12,7 +12,7 @@ export default function App() {
      */
     return (
         <main>
-            <h1>Boxes will go here</h1>
+            <h1>Boxes will go here, </h1>
         </main>
     )
 }
