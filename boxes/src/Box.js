@@ -15,7 +15,6 @@ export default function Box(props) {
      * 
      * Goal: clicking each box should toggle it on and off.
      */
-
         function toggle() {
             setOn(prevOn => !prevOn)
         }
