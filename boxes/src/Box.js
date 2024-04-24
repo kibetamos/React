@@ -18,7 +18,6 @@ export default function Box(props) {
         function toggle() {
             setOn(prevOn => !prevOn)
         }
-
     const styles = {
         backgroundColor: on ? "#222222" : "transparent"
     }
