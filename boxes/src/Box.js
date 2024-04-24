@@ -21,8 +21,6 @@ export default function Box(props) {
             setOn(prevOn => !prevOn)
         }
 
-        
-        
     const styles = {
         backgroundColor: on ? "#222222" : "transparent"
     }
