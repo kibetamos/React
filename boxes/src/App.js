@@ -33,6 +33,15 @@ export default function App(props) {
      *    backgroundColor to "#222222". If off, set it to "none"
      */
 
+
+      // CHALLENGE 3 
+    /**
+     * Challenge: Create a toggle() function that logs
+     * "clicked!" to the console
+     * 
+     * Pass that function down to each of the Box components
+     * and set it up so when they get clicked it runs the function
+     */
       
     const [squares, setSquares] = React.useState(boxes)
     // const styles = {

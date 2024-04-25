@@ -3,7 +3,7 @@ import boxes from "./boxes"
 
 export default function Box(props) {
 
-    const [on, setOn] = React.useState(props.on)
+    // const [on, setOn] = React.useState(props.on)
 
     /**
      * Challenge: Create state controlling whether
@@ -15,15 +15,26 @@ export default function Box(props) {
      * 
      * Goal: clicking each box should toggle it on and off.
      */
-    function toggle() {
-        setOn(prevOn => !prevOn)
-    }
+    // function toggle() {
+    //     setOn(prevOn => !prevOn)
+    // }
     const styles = {
         backgroundColor: on ? "#222222" : "transparent"
     }
+    // return (
+    //      <div style={styles} className="box" onClick={toggle}></div>
+    // )
+
+    // CHALENGE 3
     return (
-         <div style={styles} className="box" onClick={toggle}></div>
+        <div 
+            style={styles} 
+            className="box"
+        >
+        </div>
     )
+
+
 }
 
 
