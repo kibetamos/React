@@ -1,9 +1,10 @@
 import React from "react"
 import boxes from "./boxes"
 
+
 export default function Box(props) {
 
-    // const [on, setOn] = React.useState(props.on)
+    const [on, setOn] = React.useState(props.on)
 
     /**
      * Challenge: Create state controlling whether
@@ -30,11 +31,10 @@ export default function Box(props) {
         <div 
             style={styles} 
             className="box"
+            onClick={props.toggle}
         >
         </div>
     )
-
-
 }
 
 

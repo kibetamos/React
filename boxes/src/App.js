@@ -1,8 +1,9 @@
 import React from "react"
 import boxes from "./boxes"
+import Box from "./Box"
 // style.css
 import './style.css';
-import Box from "./Box";
+// import Box from "./Box";
 
 export default function App(props) {
   // props.darkMode
@@ -42,20 +43,28 @@ export default function App(props) {
      * Pass that function down to each of the Box components
      * and set it up so when they get clicked it runs the function
      */
-      
+ 
     const [squares, setSquares] = React.useState(boxes)
     // const styles = {
     //   backgroundColor: props.darkMode ? "#222222" : "#333333"
     // }
-    const squareElements = squares.map(square => (
 
-      <Box className="box" key={square.id} on={square.on}/>
-    ))
+    function toggle (){
+      console.log("Clicked")
+    }
+    const squareElements = squares.map(square => (
+      <Box 
+          key={square.id} 
+          on={square.on} 
+          toggle={toggle}
+      />
+  ))
 
     // console.log(boxes)
     return (
-       <main>
-            {squareElements}
-        </main>
-    )
+      <main>
+          {squareElements}
+      </main>
+  )
 }
+
