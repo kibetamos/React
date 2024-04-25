@@ -5,7 +5,7 @@ export default function Box(props) {
 
     const [on, setOn] = React.useState(props.on)
 
-        /**
+    /**
      * Challenge: Create state controlling whether
      * this box is "on" or "off". Use the incoming
      * `props.on` to determine the initial state.
@@ -15,9 +15,9 @@ export default function Box(props) {
      * 
      * Goal: clicking each box should toggle it on and off.
      */
-        function toggle() {
-            setOn(prevOn => !prevOn)
-        }
+    function toggle() {
+        setOn(prevOn => !prevOn)
+    }
     const styles = {
         backgroundColor: on ? "#222222" : "transparent"
     }
