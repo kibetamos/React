@@ -27,6 +27,7 @@ export default function Box(props) {
     // )
 
     // CHALENGE 3
+    
     return (
         <div 
             style={styles} 
