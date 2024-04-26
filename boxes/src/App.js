@@ -46,7 +46,6 @@ export default function App(props) {
     // const styles = {
     //   backgroundColor: props.darkMode ? "#222222" : "#333333"
     // }
-
     function toggle (){
       console.log("Clicked")
     }
@@ -57,7 +56,6 @@ export default function App(props) {
           toggle={toggle}
       />
   ))
-
     // console.log(boxes)
     return (
       <main>
@@ -65,4 +63,3 @@ export default function App(props) {
       </main>
   )
 }
-
