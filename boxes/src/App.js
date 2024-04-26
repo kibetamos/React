@@ -7,8 +7,6 @@ import './style.css';
 
 export default function App(props) {
   // props.darkMode
-
-
       // Challenge: use a ternary to determine the backgroundColor.
     // If darkMode is true, set it to #222222
     // If darkMode is false, set it to #cccccc
