@@ -5,7 +5,7 @@ import Box from "./Box"
 import './style.css';
 // import Box from "./Box";
 
-export default function App(props) {
+export default function App() {
   // props.darkMode
       // Challenge: use a ternary to determine the backgroundColor.
     // If darkMode is true, set it to #222222
@@ -47,16 +47,42 @@ export default function App(props) {
     //   backgroundColor: props.darkMode ? "#222222" : "#333333"
     // }
     function toggle (id){
-      console.log(id)
-    }
-    const squareElements = squares.map(square => (
-      <Box 
-          key={square.id}
-          id={square.id} 
-          on={square.on} 
-          toggle={toggle}
-      />
-  ))
+/**
+ * Challenge: use setSquares to update the
+ * correct square in the array.
+ * 
+ * Make sure not to directly modify state!
+ * 
+ * Hint: look back at the lesson on updating arrays
+ * in state if you need a reminder on how to do this
+ */
+
+      setSquares(prevSquares => {
+        const newSquares = []
+        for(let i = 0; i < prevSquares.length; i++) {
+            const currentSquare = prevSquares[i]
+            if(currentSquare.id === id) {
+                const updatedSquare = {
+                    ...currentSquare,
+                    on: !currentSquare.on
+                }
+                newSquares.push(updatedSquare)
+            } else {
+                newSquares.push(currentSquare)
+            }
+        }
+        return newSquares
+      })
+}
+
+const squareElements = squares.map(square => (
+  <Box 
+      key={square.id} 
+      id={square.id}
+      on={square.on} 
+      toggle={toggle}
+  />
+))
     // console.log(boxes)
     return (
       <main>
