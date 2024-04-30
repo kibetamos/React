@@ -79,13 +79,21 @@ export default function App() {
       // })
 
       // solution 2
-setSquares(prevSquares => {
-  return prevSquares.map((square) => {
-   return  square.id === id ? {...square,on:!square.on} : square
-  })
+// setSquares(prevSquares => {
+//   return prevSquares.map((square) => {
+//    return  square.id === id ? {...square,on:!square.on} : square
+//   })
+// }
+
+// )
+setSquares(prevtriangles => {
+  return prevtriangles.map((square) =>{
+    return square.id === id ? {...squares, on:!square.on}: square
+  } )
 }
 
 )
+
 }
 
 const squareElements = squares.map(square => (
