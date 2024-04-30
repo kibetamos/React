@@ -18,6 +18,7 @@ export default function Box(props) {
     // function toggle() {
     //     setOn(prevOn => !prevOn)
     // }
+    console.log(props.id)
     const styles = {
         backgroundColor: on ? "#222222" : "transparent"
     }
@@ -30,7 +31,7 @@ export default function Box(props) {
         <div 
             style={styles} 
             className="box"
-            onClick={props.toggle}
+            onClick={() => props.toggle(props.id)}
         >
         </div>
     )

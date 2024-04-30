@@ -46,12 +46,13 @@ export default function App(props) {
     // const styles = {
     //   backgroundColor: props.darkMode ? "#222222" : "#333333"
     // }
-    function toggle (){
-      console.log("Clicked")
+    function toggle (id){
+      console.log(id)
     }
     const squareElements = squares.map(square => (
       <Box 
-          key={square.id} 
+          key={square.id}
+          id={square.id} 
           on={square.on} 
           toggle={toggle}
       />
