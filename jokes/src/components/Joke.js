@@ -13,12 +13,13 @@ export default function Joke(props){
     function toggle (){
         setIsShow(prevShown => !prevShown)
     }
-    
+    // isShown 
     console.log(isShown)
     return(
         <div>
             {props.setup && <h3>Setup: {props.setup}</h3>}
-            <p>Punchline: {props.punchline}</p>
+            {isShown && <p>{props.punchline}</p>}
+            {/* <p>Punchline: {props.punchline}</p> */}
             <button onClick={toggle}>Show Punchline</button>
             <hr />
         </div>
