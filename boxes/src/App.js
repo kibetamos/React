@@ -87,7 +87,7 @@ export default function App() {
 
 // )
 setSquares(prevtriangles => {
-  return prevtriangles.map((square) =>{
+  return prevtriangles.map((square) =>{// Map over the previous squares array
     return square.id === id ? {...squares, on:!square.on}: square
   } )
 }
