@@ -79,13 +79,13 @@ export default function App() {
       // })
 
       // solution 2
-      setSquares(prevSquares => {
-        return prevSquares.map((square) => {
-          // Toggle the 'on' property of the square with the given id
+setSquares(prevSquares => {
+  return prevSquares.map((square) => {
+   return  square.id === id ? {...square,on:!square.on} : square
+  })
+}
 
-            return square.id === id ? {...square, on: !square.on} : square 
-        })
-    })
+)
 }
 
 const squareElements = squares.map(square => (
