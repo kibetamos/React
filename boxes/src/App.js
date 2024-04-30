@@ -70,6 +70,7 @@ export default function App() {
             } else {
                 newSquares.push(currentSquare)
             }
+            
         }
         return newSquares
       })
