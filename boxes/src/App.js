@@ -57,24 +57,35 @@ export default function App() {
  * in state if you need a reminder on how to do this
  */
 
-      setSquares(prevSquares => { // Use the functional form of setSquares to update state based on previous state
-        const newSquares = []  // Initialize an empty array to hold the updated squares
-        for(let i = 0; i < prevSquares.length; i++) { // Iterate through each square in the previous state
-            const currentSquare = prevSquares[i] // Retrieve the current square being processed
-            if(currentSquare.id === id) { // Check if the id of the current square matches the id passed to the function
-                const updatedSquare = { // If the id matches, create an updated version of the current square
-                    ...currentSquare, // Spread operator to copy properties of currentSquare
-                    on: !currentSquare.on // Toggle the 'on' property of the square
+// declarative
+// solution 1
+      // setSquares(prevSquares => { // Use the functional form of setSquares to update state based on previous state
+      //   const newSquares = []  // Initialize an empty array to hold the updated squares
+      //   for(let i = 0; i < prevSquares.length; i++) { // Iterate through each square in the previous state
+      //       const currentSquare = prevSquares[i] // Retrieve the current square being processed
+      //       if(currentSquare.id === id) { // Check if the id of the current square matches the id passed to the function
+      //           const updatedSquare = { // If the id matches, create an updated version of the current square
+      //               ...currentSquare, // Spread operator to copy properties of currentSquare
+      //               on: !currentSquare.on // Toggle the 'on' property of the square
     
-                }
-                newSquares.push(updatedSquare) // Push the updated square to the newSquares array
-            } else {
-                newSquares.push(currentSquare)// If the id doesn't match, push the unchanged current square
-            }
+      //           }
+      //           newSquares.push(updatedSquare) // Push the updated square to the newSquares array
+      //       } else {
+      //           newSquares.push(currentSquare)// If the id doesn't match, push the unchanged current square
+      //       }
 
-        }
-        return newSquares // Return the array of updated squares, which becomes the new state
-      })
+      //   }
+      //   return newSquares // Return the array of updated squares, which becomes the new state
+      // })
+
+      // solution 2
+      setSquares(prevSquares => {
+        return prevSquares.map((square) => {
+          // Toggle the 'on' property of the square with the given id
+
+            return square.id === id ? {...square, on: !square.on} : square 
+        })
+    })
 }
 
 const squareElements = squares.map(square => (
