@@ -93,9 +93,7 @@ setSquares(prevtriangles => {
   } )
 }
 
-)
-
-}
+)}
 
 const squareElements = squares.map(square => (
   <Box 
