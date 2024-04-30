@@ -6,7 +6,10 @@ import React from "react";
      * - Add a button that toggles the value back and forth
      */
 
-
+ /**
+     * Challenge:
+     * - Only display the punchline paragraph if `isShown` is true
+     */
 export default function Joke(props){
     const [isShown, setIsShow] = React.useState(false)
 
@@ -18,7 +21,8 @@ export default function Joke(props){
     return(
         <div>
             {props.setup && <h3>Setup: {props.setup}</h3>}
-            {isShown && <p>{props.punchline}</p>}
+            {/* {isShown && <p>{props.punchline}</p>} */}
+            {isShown}
             {/* <p>Punchline: {props.punchline}</p> */}
             <button onClick={toggle}>Show Punchline</button>
             <hr />
