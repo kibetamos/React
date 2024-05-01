@@ -32,8 +32,8 @@ export default function Joke(props){
 
             {/* Itenary on a button? */}
 
-            <button onClick={toggleShown}>{isShown ? "Hide" : "Show"} Punchline</button>
-            
+            <button onClick={toggle}>{isShown ? "Hide" : "Show"} Punchline</button>
+
             {/* <p>Punchline: {props.punchline}</p> */}
             {/* <button onClick={toggle}>Show Punchline</button> */}
             <hr />
