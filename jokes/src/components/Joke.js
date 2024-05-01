@@ -16,15 +16,20 @@ export default function Joke(props){
     function toggle (){
         setIsShow(prevShown => !prevShown)
     }
+
+    
     // isShown 
     console.log(isShown)
     return(
         <div>
             {props.setup && <h3>Setup: {props.setup}</h3>}
-            {/* {isShown && <p>{props.punchline}</p>} */}
-            {isShown}
+            {isShown && <p>{props.punchline}</p>}
+            
+            {/* {isShown} */}
+            {isShown && <button onClick={toggle}>Hide Punchline</button>}
+            {!isShown && <button onClick={toggle}>Show Punchline</button>}
             {/* <p>Punchline: {props.punchline}</p> */}
-            <button onClick={toggle}>Show Punchline</button>
+            {/* <button onClick={toggle}>Show Punchline</button> */}
             <hr />
         </div>
 
