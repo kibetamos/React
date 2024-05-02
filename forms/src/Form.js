@@ -7,11 +7,13 @@ export default function Form() {
                 type="text"
                 placeholder="First Name"
             />
-            <input
-                type="text"
-                placeholder="First Name"
-            />
-            
-        </form>
+         
+        </form> 
+
+        
+        
+
+        
+
     )
 }
