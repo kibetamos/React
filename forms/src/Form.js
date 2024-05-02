@@ -4,7 +4,7 @@ export default function Form() {
 
     const [firstName, setFirstName] = React.useState("")
 
-    function handlechange(){
+    function handleChange(){
         console.log('Changed')
     }
     return (
@@ -12,9 +12,8 @@ export default function Form() {
             <input
                 type="text"
                 placeholder="First Name"
-                onChange={handlechange()}
+                onChange={handleChange}
             />
-         
-        </form> 
+        </form>
     )
 }
