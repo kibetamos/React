@@ -6,8 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <a className="App-link">
-          <Form/>
-          
+          <Form/>   
         </a>
       </header>
     </div>
