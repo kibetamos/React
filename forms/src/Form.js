@@ -22,7 +22,6 @@ export default function Form() {
         // console.log('Changed')
     }
 
-
     function Change(event){
         setLastName(event.target.value)
 
@@ -34,6 +33,9 @@ export default function Form() {
                 placeholder="First Name"
                 onChange={handleChange}
             />
+
+
+            
             <input type="text" 
             placeholder="lastname"
             onChange={Change}
