@@ -70,8 +70,23 @@ export default function Form() {
             onChange={handleChange}
             value={formData.comments} 
             />
+{/* /*
+    This is a checkbox input element.
+    It allows users to select or deselect an option.
+    The 'type' attribute specifies the type of input, which is 'checkbox'.
+    The 'id' attribute uniquely identifies this input element as 'isFriendly'.
+*/ }
+           ` <input 
+                type="checkbox" 
+                id="isFriendly" 
+            />
+ 
+    {/* This is a label associated with the checkbox input.
+    The 'for' attribute associates the label with the input element having the same id ('isFriendly').
+    Users can click on this label to toggle the checkbox. */}
 
-            <input type="checkbox" />
+            <label htmlFor="isFriendly">Are you friendly?</label>
+            <br />`
 
 
 
