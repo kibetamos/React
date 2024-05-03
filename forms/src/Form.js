@@ -5,6 +5,11 @@ export default function Form() {
     const [formData, setFormData] = React.useState(
         {firstName: "", lastName: ""}
     )
+
+     /**
+     * Challenge: add an email field/state to the form
+     */
+    
      /**
      * Challenge: Track the applicant's last name as well
      */
@@ -26,6 +31,8 @@ export default function Form() {
     //     setLastName(event.target.value)
 
     //}
+
+
 
     return (
         <form>
