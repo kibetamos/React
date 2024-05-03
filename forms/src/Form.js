@@ -4,9 +4,18 @@ export default function Form() {
 
     const [firstName, setFirstName] = React.useState("")
 
+    
+    console.log(firstName)
+
     function handleChange(event){
-        console.log(event.target)
-        console.log('Changed')
+        console.log(event.target.value)
+
+         /**
+         * Challenge: update the firstName state on every keystroke
+         */
+
+        setFirstName(event.target.value)
+        // console.log('Changed')
     }
     return (
         <form>
