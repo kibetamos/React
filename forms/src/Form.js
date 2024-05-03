@@ -50,8 +50,6 @@ export default function Form() {
                 value={formData.firstName}
             />
 
-
-
             <input type="text" 
             placeholder="lastname"
             onChange={handleChange}
@@ -70,8 +68,15 @@ export default function Form() {
             name="comments"
             placeholder="Comments"
             onChange={handleChange}
-            value={formData.comments} />
+            value={formData.comments} 
+            />
+
+            <input type="checkbox" />
+
+
+
 
         </form>
+
     )
 }
