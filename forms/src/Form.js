@@ -26,6 +26,7 @@ export default function Form() {
         setLastName(event.target.value)
 
     }
+    
     return (
         <form>
             <input
@@ -35,7 +36,7 @@ export default function Form() {
             />
 
 
-            
+
             <input type="text" 
             placeholder="lastname"
             onChange={Change}
