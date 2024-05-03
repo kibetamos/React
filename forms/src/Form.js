@@ -2,44 +2,46 @@ import React from "react"
 
 export default function Form() {
 
-    const [firstName, setFirstName] = React.useState("")
+    const [formData, setFormData] = React.useState(
+        {firstName: "", lastName: ""}
+    )
      /**
      * Challenge: Track the applicant's last name as well
      */
-    const [lastname, setLastName] = React.useState("")
+    // const [lastname, setLastName] = React.useState("")s``
 
     
-    console.log(firstName, lastname)
+    console.log(formData)
 
-    function handleChange(event){
-        // console.log(event.target.value)
-
-         /**
-         * Challenge: update the firstName state on every keystroke
-         */
-
-        setFirstName(event.target.value)
-        // console.log('Changed')
+    function handleChange(event) {
+        setFormData(prevFormData => {
+            return {
+                ...prevFormData,
+                [event.target.name]: event.target.value
+            }
+        })
     }
 
-    function Change(event){
-        setLastName(event.target.value)
+    // function Change(event){
+    //     setLastName(event.target.value)
 
-    }
-    
+    //}
+
     return (
         <form>
             <input
                 type="text"
                 placeholder="First Name"
                 onChange={handleChange}
+                name="firstName"
             />
 
 
 
             <input type="text" 
             placeholder="lastname"
-            onChange={Change}
+            onChange={handleChange}
+            name="lastName"
             />
         </form>
     )
