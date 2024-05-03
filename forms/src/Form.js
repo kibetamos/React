@@ -3,7 +3,10 @@ import React from "react"
 export default function Form() {
 
     const [formData, setFormData] = React.useState(
-        {firstName: "", lastName: "", email: ""}
+        {firstName: "",
+         lastName: "", 
+         email: "",
+        comments: ""}
     )
      /**
      * Challenge: add an email field/state to the form
@@ -14,7 +17,14 @@ export default function Form() {
      */
     // const [lastname, setLastName] = React.useState("")s``
 
+
     
+     /**
+     * Challenge: Add a textarea for "comments" to the form
+     * Make sure to update state when it changes.
+     */
+
+
     console.log(formData)
 
     function handleChange(event) {
@@ -55,6 +65,12 @@ export default function Form() {
             name="email"
             value={formData.email}
             />
+
+            <textarea 
+            name="comments"
+            placeholder="Comments"
+            onChange={handleChange}
+            value={formData.comments} />
 
         </form>
     )
