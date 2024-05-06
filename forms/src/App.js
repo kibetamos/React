@@ -3,12 +3,12 @@ import './App.css';
 import Form from './Form';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App-header">
+      {/* <header className=""> */}
         
           <Form/>   
         
-      </header>
+      {/* </header> */}
     </div>
   );
 }
