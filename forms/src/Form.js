@@ -23,8 +23,6 @@ export default function Form() {
      * Challenge: Add a textarea for "comments" to the form
      * Make sure to update state when it changes.
      */
-
-
     console.log(formData)
 
     function handleChange(event) {
