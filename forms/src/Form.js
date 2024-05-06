@@ -90,6 +90,12 @@ export default function Form() {
 
             <label htmlFor="isFriendly">Are you friendly?</label>
             <br />`
+
+            {/* Lets add radio buttons
+             */}
+             <fieldset>
+                <legend>Current Employee Status</legend>
+             </fieldset>
         </form>
 
     )
