@@ -30,3 +30,7 @@ input, textarea {
   border-radius: 5px;
   display: block;
 }
+
+input[type="checkbox"] {
+  margin-right: 0.75rem;
+}

@@ -6,7 +6,9 @@ export default function Form() {
         {firstName: "",
          lastName: "", 
          email: "",
-        comments: ""}
+        comments: "",
+        isFriendly:true
+}
     )
      /**
      * Challenge: add an email field/state to the form
@@ -15,10 +17,7 @@ export default function Form() {
      /**
      * Challenge: Track the applicant's last name as well
      */
-    // const [lastname, setLastName] = React.useState("")s``
-
-
-    
+    // const [lastname, setLastName] = React.useState("")s``    
      /**
      * Challenge: Add a textarea for "comments" to the form
      * Make sure to update state when it changes.
@@ -28,10 +27,12 @@ export default function Form() {
     console.log(formData)
 
     function handleChange(event) {
+        const {name, value, type, checked} = event.target
         setFormData(prevFormData => {
             return {
                 ...prevFormData,
-                [event.target.name]: event.target.value
+                // [event.target.name]: event.target.value
+                [name]: type === "checkbox" ? checked : value
             }
         })
     }
@@ -79,6 +80,8 @@ export default function Form() {
            ` <input 
                 type="checkbox" 
                 id="isFriendly" 
+                checked={formData.isFriendly}
+                name="isFriendly" 
             />
  
     {/* This is a label associated with the checkbox input.
@@ -87,10 +90,6 @@ export default function Form() {
 
             <label htmlFor="isFriendly">Are you friendly?</label>
             <br />`
-
-
-
-
         </form>
 
     )
