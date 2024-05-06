@@ -42,8 +42,12 @@ export default function Form() {
     //     setLastName(event.target.value)
 
     //}
+
+    function handleSubmit(){
+        
+    }
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <input
                 type="text"
                 placeholder="First Name"
