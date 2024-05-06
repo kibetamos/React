@@ -149,6 +149,9 @@ export default function Form() {
                 <option value="indigo">Indigo</option>
                 <option value="violet">Violet</option>
              </select>
+             <br />
+            <br />
+            <button >Submit</button>
         </form>
 
     )
