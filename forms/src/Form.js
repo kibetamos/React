@@ -11,6 +11,7 @@ export default function Form() {
         employment:""
 }
     )
+    console.log(formData.employment)
      /**
      * Challenge: add an email field/state to the form
      */
