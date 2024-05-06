@@ -8,7 +8,8 @@ export default function Form() {
          email: "",
         comments: "",
         isFriendly:true,
-        employment:""
+        employment:"",
+        favColor: ""
 }
     )
     console.log(formData.employment)
@@ -129,6 +130,25 @@ export default function Form() {
             <label htmlFor="full-time">full Time</label>
             <br />
              </fieldset>
+             <br />
+             <label htmlFor="favColor">What is your fav Color</label>
+
+             <br />
+             <select 
+             id="favcolor"
+             value={formData.favColor}
+             onChange={handleChange}
+             name="favColor"
+             >
+                <option value="">-- Choose --</option>
+             <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option  value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo</option>
+                <option value="violet">Violet</option>
+             </select>
         </form>
 
     )
