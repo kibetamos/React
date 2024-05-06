@@ -77,19 +77,20 @@ export default function Form() {
     The 'type' attribute specifies the type of input, which is 'checkbox'.
     The 'id' attribute uniquely identifies this input element as 'isFriendly'.
 */ }
-           ` <input 
+           <input 
                 type="checkbox" 
                 id="isFriendly" 
                 checked={formData.isFriendly}
+                onChange={handleChange}
                 name="isFriendly" 
             />
- 
-    {/* This is a label associated with the checkbox input.
+ {/* This is a label associated with the checkbox input.
     The 'for' attribute associates the label with the input element having the same id ('isFriendly').
     Users can click on this label to toggle the checkbox. */}
 
             <label htmlFor="isFriendly">Are you friendly?</label>
-            <br />`
+            <br />
+            <br/>
 
             {/* Lets add radio buttons
              */}
