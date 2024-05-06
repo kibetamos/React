@@ -96,6 +96,13 @@ export default function Form() {
              */}
              <fieldset>
                 <legend>Current Employee Status</legend>
+
+                <input 
+                type="radio"
+                id="unemployed"
+                />
+                <label htmlFor="unemployed">Unemployed</label>
+                <br />
              </fieldset>
         </form>
 
