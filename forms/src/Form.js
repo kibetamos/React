@@ -1,18 +1,18 @@
 import React from "react"
 
 export default function Form() {
-
     const [formData, setFormData] = React.useState(
-        {firstName: "",
-         lastName: "", 
-         email: "",
-        comments: "",
-        isFriendly:true,
-        employment:"",
-        favColor: ""
-}
+        {
+            firstName: "", 
+            lastName: "", 
+            email: "", 
+            comments: "", 
+            isFriendly: true,
+            employment: "",
+            favColor: ""
+        }
     )
-    console.log(formData.employment)
+    // console.log(formData.employment)
      /**
      * Challenge: add an email field/state to the form
      */
@@ -25,7 +25,7 @@ export default function Form() {
      * Challenge: Add a textarea for "comments" to the form
      * Make sure to update state when it changes.
      */
-    console.log(formData)
+    // console.log(formData)
 
     function handleChange(event) {
         const {name, value, type, checked} = event.target
@@ -43,8 +43,11 @@ export default function Form() {
 
     //}
 
-    function handleSubmit(){
-        
+    function handleSubmit(event){
+        event.preventDefault()
+        // submitToApi(formData)
+        console.log(formData)
+
     }
     return (
         <form onSubmit={handleSubmit}>
