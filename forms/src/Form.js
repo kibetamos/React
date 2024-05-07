@@ -9,6 +9,7 @@ export default function Form() {
         console.log('Changed')
     }
     return (
+        
         <form>
             <input
                 type="text"
