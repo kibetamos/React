@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* body {
+  margin: 0;
+  padding: 20px;
+} */
+
+input, textarea {
+  margin-bottom: 15px;
+  height: 30px;
+  text-indent: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: block;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.75rem;
+}
