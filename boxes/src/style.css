@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%; /* Makes the box round */
+    display: inline-block;
+    margin-right: 2px;
+}
