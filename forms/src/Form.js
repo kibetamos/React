@@ -1,6 +1,7 @@
 import React from "react"
 
 export default function Form() {
+    // We first create a state to store oyr form data 
     const [formData, setFormData] = React.useState(
         {
             firstName: "", 
@@ -12,6 +13,8 @@ export default function Form() {
             favColor: ""
         }
     )
+
+    // we are oing to used useid
 
     const id = React.useId()
     // console.log(formData.employment)
@@ -29,6 +32,8 @@ export default function Form() {
      */
     // console.log(formData)
 
+
+    // funtion to handle change
     function handleChange(event) {
         const {name, value, type, checked} = event.target
         setFormData(prevFormData => {
