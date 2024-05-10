@@ -1,4 +1,5 @@
-### React
+# React Projects Showcase
+
 This is a list of react applications both simple and complex.
 
 1. airbnb
