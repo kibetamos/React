@@ -21,3 +21,13 @@ Welcome to the React Projects Showcase repository! This repository contains a co
   - Random joke generation
   - User-friendly interface
 - **Technologies**: React, [Additional technologies used]
+
+
+### 3. Meme
+
+- **Description**: Meme is a more complex React project that serves as a meme generator. Users can upload images, add text captions, and share the resulting meme. This project demonstrates React's component lifecycle methods, state management, and handling of user-generated content.
+- **Features**:
+  - Image upload
+  - Text captioning
+  - Meme sharing
+- **Technologies**: React, [Additional technologies used]
