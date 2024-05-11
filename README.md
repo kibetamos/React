@@ -33,7 +33,6 @@ Welcome to the React Projects Showcase repository! This repository contains a co
 - **Technologies**: React, [Additional technologies used]
 
 
-
 ## Getting Started
 
 To get started with any of these projects, follow the instructions provided in their respective directories.
