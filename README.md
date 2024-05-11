@@ -31,3 +31,16 @@ Welcome to the React Projects Showcase repository! This repository contains a co
   - Text captioning
   - Meme sharing
 - **Technologies**: React, [Additional technologies used]
+
+
+## Getting Started
+
+To get started with any of these projects, follow the instructions provided in their respective directories.
+
+## Contributing
+
+Contributions are welcome! If you have ideas for improving any of the projects or would like to add your own React project to the showcase, feel free to submit a pull request.
+
+## License
+
+This repository is licensed under the [MIT License](LICENSE).
