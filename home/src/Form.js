@@ -7,7 +7,7 @@ export default function Form() {
         email: "",
         password1:"",
         password2:"",
-        checkbox:"",
+        okayToEmail: true,
 
         }
     );
@@ -16,9 +16,13 @@ export default function Form() {
      * Challenge: Connect the form to local state
      * 
      * 1. Create a state object to store the 4 values we need to save.
+     * 
+     * 
      * 2. Create a single handleChange function that can
      *    manage the state of all the inputs and set it up
      *    correctly
+     * 
+     * 
      * 3. When the user clicks "Sign up", check if the 
      *    password & confirmation match each other. If
      *    so, log "Successfully signed up" to the console.
@@ -27,12 +31,13 @@ export default function Form() {
      *    the "newsletter" checkbox, log "Thanks for signing
      *    up for our newsletter!" to the console.
      */
-    console.log(formData.email)
+    console.log(formData.checkbox)
 
     //function to handle change in the input fields
     function handleChange(event){
         // Updating the form data state using the setFormData function
         //callback function
+        const {name, value, type, checked} = event.target
         setFormData(prevDataForm => {
 
             // Returning a new state object
@@ -40,7 +45,8 @@ export default function Form() {
                 // Spread operator (...) to copy all properties from the previous state
                 ...prevDataForm,
                 // Computed property name: using the input field's name attribute to dynamically update the corresponding property
-                [event.target.name]: event.target.value
+                // [event.target.name]: event.target.value
+                [name]: type === "checkbox" ? checked : value
 
             }
         })
@@ -66,19 +72,23 @@ export default function Form() {
                     placeholder="Password"
                     className="form--input"
                     name="password1"
+                    onChange={handleChange}
                 />
                 <input 
                     type="password" 
                     placeholder="Confirm password"
                     className="form--input"
                     name="passwod2"
+                    onChange={handleChange}
                 />
                 
                 <div className="form--marketing">
                     <input
                         id="okayToEmail"
                         type="checkbox"
-                        name="checkbox"
+                        // id = "isAgreed"
+                        name="okayToEmail"
+                        onChange={handleChange}
                         
                     />
                     <label htmlFor="okayToEmail">I want to join the newsletter</label>
