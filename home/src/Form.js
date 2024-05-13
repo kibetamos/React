@@ -7,10 +7,10 @@ export default function Form() {
         email: "",
         password1:"",
         password2:"",
-        okayToEmail: true,
+        okayToEmail: true
 
         }
-    );
+    )
 
     /**
      * Challenge: Connect the form to local state
@@ -31,19 +31,20 @@ export default function Form() {
      *    the "newsletter" checkbox, log "Thanks for signing
      *    up for our newsletter!" to the console.
      */
-    console.log(formData.checkbox)
+    console.log(formData.email)
 
     //function to handle change in the input fields
     function handleChange(event){
         // Updating the form data state using the setFormData function
         //callback function
         const {name, value, type, checked} = event.target
-        setFormData(prevDataForm => {
+
+        setFormData(prevFormData => {
 
             // Returning a new state object
             return{
                 // Spread operator (...) to copy all properties from the previous state
-                ...prevDataForm,
+                ...prevFormData,
                 // Computed property name: using the input field's name attribute to dynamically update the corresponding property
                 // [event.target.name]: event.target.value
                 [name]: type === "checkbox" ? checked : value
@@ -65,6 +66,7 @@ export default function Form() {
                     placeholder="Email address"
                     className="form--input"
                     name="email"
+                    value={formData.email}
                     onChange={handleChange}
                 />
                 <input 
