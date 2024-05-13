@@ -1,7 +1,17 @@
 import React from "react"
 
 export default function Form() {
-    
+    // we first create state 
+    const [formData, setFormData] = React.useState(
+        {
+        email: "",
+        password1:"",
+        password2:"",
+        checkbox:"",
+
+        }
+    );
+
     /**
      * Challenge: Connect the form to local state
      * 
@@ -29,22 +39,26 @@ export default function Form() {
                     type="email" 
                     placeholder="Email address"
                     className="form--input"
+                    name="email"
                 />
                 <input 
                     type="password" 
                     placeholder="Password"
                     className="form--input"
+                    name="password1"
                 />
                 <input 
                     type="password" 
                     placeholder="Confirm password"
                     className="form--input"
+                    name="passwod2"
                 />
                 
                 <div className="form--marketing">
                     <input
                         id="okayToEmail"
                         type="checkbox"
+                        name="checkbox"
                         
                     />
                     <label htmlFor="okayToEmail">I want to join the newsletter</label>
