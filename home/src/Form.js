@@ -27,6 +27,16 @@ export default function Form() {
      *    the "newsletter" checkbox, log "Thanks for signing
      *    up for our newsletter!" to the console.
      */
+    console.log(formData.email)
+
+    function handleChange(event){
+        setFormData(prevDataForm => {
+            return{
+                ...prevDataForm,[event.target.name]: event.target.value
+            }
+        })
+
+    }
     
     function handleSubmit(event) {
         event.preventDefault()
@@ -40,6 +50,7 @@ export default function Form() {
                     placeholder="Email address"
                     className="form--input"
                     name="email"
+                    onChange={handleChange}
                 />
                 <input 
                     type="password" 
