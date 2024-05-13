@@ -7,7 +7,7 @@ export default function Form() {
         email: "",
         password1:"",
         password2:"",
-        okayToEmail: true
+        okayToEmail: false
 
         }
     )
@@ -56,12 +56,19 @@ export default function Form() {
     
     function handleSubmit(event) {
         event.preventDefault()
-        if(formData.password1 === formData.password2){
+        // if(formData.password1 === formData.password2)&& (formData.okayToEmail == true) {
+        if (formData.password1 === formData.password2) {
+
             console.log("You are logged in")
             console.log(formData)
         }
         else{
             console.log("Wewe ni kumbafu sana")
+            return
+        }
+
+        if(formData.okayToEmail) {
+            console.log("Thanks for signing up for our newsletter!")
         }
         
     }
