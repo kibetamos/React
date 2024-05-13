@@ -56,6 +56,13 @@ export default function Form() {
     
     function handleSubmit(event) {
         event.preventDefault()
+        if(formData.password1 === formData.password2){
+            console.log("You are logged in")
+        }
+        else{
+            console.log("Wewe ni kumbafu sana")
+        }
+        console.log(formData)
     }
     
     return (
@@ -74,13 +81,15 @@ export default function Form() {
                     placeholder="Password"
                     className="form--input"
                     name="password1"
+                    value={formData.password1}
                     onChange={handleChange}
                 />
                 <input 
                     type="password" 
                     placeholder="Confirm password"
                     className="form--input"
-                    name="passwod2"
+                    name="password2"
+                    value={formData.password2}
                     onChange={handleChange}
                 />
                 
@@ -90,6 +99,7 @@ export default function Form() {
                         type="checkbox"
                         // id = "isAgreed"
                         name="okayToEmail"
+                        value={formData.okayToEmail}
                         onChange={handleChange}
                         
                     />
