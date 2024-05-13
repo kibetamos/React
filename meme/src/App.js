@@ -5,10 +5,10 @@ import Meme from "./components/Meme"
  * Challenge: Build the Header component
  */
 export default function App() {
-    return (
-    <div>
-    <Header />
-    <Meme />
+  return (
+      <div>
+          <Header />
+          <Meme />
       </div>
-    )
-  }
+  )
+}

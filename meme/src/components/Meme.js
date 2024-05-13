@@ -40,7 +40,7 @@ export default function Meme() {
      * correct way.
      */
 
-    let url
+    // let url
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText:"",
@@ -63,17 +63,16 @@ export default function Meme() {
         }))
         
     }
+
+    
     return (
         <main>
-            <p>{url}</p>
             <div className="form">
-                
                 <input 
                     type="text"
                     placeholder="Top text"
                     className="form--input"
                 />
-
                 <input 
                     type="text"
                     placeholder="Bottom text"
@@ -86,13 +85,11 @@ export default function Meme() {
                     Get a new meme image 🖼
                 </button>
             </div>
-            {/* <img src={meme.randomImage} className="memes--image"/> */}
             <div className="meme">
                 <img src={meme.randomImage} className="meme--image" />
                 <h2 className="meme--text top">One does not simply</h2>
                 <h2 className="meme--text bottom">Walk into Mordor</h2>
             </div>
-            
         </main>
     )
 }
