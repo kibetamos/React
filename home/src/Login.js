@@ -85,7 +85,7 @@ export default function Form() {
                     value={formData.password1}
                     onChange={handleChange}
                 />
-                <input 
+                {/* <input 
                     type="password" 
                     placeholder="Confirm password"
                     className="form--input"
@@ -93,8 +93,8 @@ export default function Form() {
                     value={formData.password2}
                     onChange={handleChange}
                 />
-                
-                <div className="form--marketing">
+                 */}
+                {/* <div className="form--marketing">
                     <input
                         id="okayToEmail"
                         type="checkbox"
@@ -105,7 +105,7 @@ export default function Form() {
                         
                     />
                     <label htmlFor="okayToEmail">I want to join the newsletter</label>
-                </div>
+                </div> */}
                 <button 
                     className="form--submit"
                 >
