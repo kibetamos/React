@@ -29,10 +29,19 @@ export default function Form() {
      */
     console.log(formData.email)
 
+    //function to handle change in the input fields
     function handleChange(event){
+        // Updating the form data state using the setFormData function
+        //callback function
         setFormData(prevDataForm => {
+
+            // Returning a new state object
             return{
-                ...prevDataForm,[event.target.name]: event.target.value
+                // Spread operator (...) to copy all properties from the previous state
+                ...prevDataForm,
+                // Computed property name: using the input field's name attribute to dynamically update the corresponding property
+                [event.target.name]: event.target.value
+
             }
         })
 
