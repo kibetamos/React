@@ -72,11 +72,6 @@ export default function Meme() {
      * 2. Replace the hard-coded text on the image with
      *    the text being saved to state.
      */
-    React.useEffect(() => {
-        fetch("https://api.imgflip.com/get_memes")
-            .then(res => res.json())
-            .then(data => console.log(data))
-    }, [])
 
 
 
@@ -96,6 +91,13 @@ export default function Meme() {
     }
 
     const [allMemeImages, setAllMemeImages] = React.useState(memesData)
+
+    
+    React.useEffect(() => {
+        fetch("https://api.imgflip.com/get_memes")
+            .then(res => res.json())
+            .then(data => console.log(data))
+    }, [])
 
     function getMemeImage() {
        
