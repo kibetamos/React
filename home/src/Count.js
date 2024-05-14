@@ -14,6 +14,7 @@ export default function Count() {
         //     .then(data => console.log(data))
     })
     
+    
     return (
         <div>
             <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
