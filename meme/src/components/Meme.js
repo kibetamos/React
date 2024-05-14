@@ -67,15 +67,11 @@ export default function Meme() {
      *    the text being saved to state.
      */
 
-
-
-
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText:"",
         randomImage : "http://i.imgflip.com/1bij.jpg"
     })
-
 
     const [allMemes, setAllMemes] = React.useState([])
 
@@ -85,7 +81,6 @@ export default function Meme() {
             .then(res => res.json())
             .then(data => setAllMemes(data.data.memes))
     }, [])
-
 
     function getMemeImage() {
        
