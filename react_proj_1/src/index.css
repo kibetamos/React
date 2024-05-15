@@ -3,7 +3,7 @@
 main {
   padding: 57px 27px;
   color: white;
-  background-image: url(./images/react-logo.png);
+  background-image: url(/home/bench/Documents/projects/React/react_proj_1/public/logo192.png);
   background-repeat: no-repeat;
   background-position: right 75%;
 }
