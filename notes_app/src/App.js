@@ -5,7 +5,7 @@ import { data } from "./data"
 import Split from "react-split"
 import {nanoid} from "nanoid"
 import ReactMde from 'react-mde';
-
+import './style.css';
 
 /**
  * Challenge: Spend 10-20+ minutes reading through the code
