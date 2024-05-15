@@ -4,6 +4,7 @@ import ReactMde from "react-mde"
 import Showdown from "showdown"
 
 export default function Editor({ currentNote, updateNote }) {
+    //we are creating state
     const [selectedTab, setSelectedTab] = React.useState("write")
 
     const converter = new Showdown.Converter({

@@ -3,7 +3,10 @@ import Sidebar from "./components/Sidebar"
 import Editor from "./components/Editor"
 import { data } from "./data"
 import Split from "react-split"
+
+// Import nanoid for generating unique IDs
 import {nanoid} from "nanoid"
+
 import ReactMde from 'react-mde';
 import './style.css';
 
@@ -16,17 +19,25 @@ import './style.css';
  */
 
 export default function App() {
+   // Define state for notes and currentNoteId
     const [notes, setNotes] = React.useState([])
     const [currentNoteId, setCurrentNoteId] = React.useState(
         (notes[0] && notes[0].id) || ""
     )
     
+    // Define the function to create a new note
     function createNewNote() {
+
+      // Create a new note object with a unique ID and default body
         const newNote = {
-            id: nanoid(),
-            body: "# Type your markdown note's title here"
+            id: nanoid(), // Generate a unique ID using nanoid
+            body: "# Type your markdown note's title here"  // Default body text for the new note
+          };
         }
+        // Update the 'notes' state to include the new note at the beginning of the array
         setNotes(prevNotes => [newNote, ...prevNotes])
+
+        // Set the 'currentNoteId' state to the ID of the newly created note
         setCurrentNoteId(newNote.id)
     }
     
