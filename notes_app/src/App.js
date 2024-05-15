@@ -4,6 +4,8 @@ import Editor from "./components/Editor"
 import { data } from "./data"
 import Split from "react-split"
 import {nanoid} from "nanoid"
+import ReactMde from 'react-mde';
+
 
 /**
  * Challenge: Spend 10-20+ minutes reading through the code
