@@ -31,13 +31,13 @@ export default function App() {
       // Create a new note object with a unique ID and default body
         const newNote = {
             id: nanoid(), // Generate a unique ID using nanoid
-            body: "# Type your markdown note's title here"  // Default body text for the new note
-          };
+            body: "# Type your markdown note's title here"  
         }
-        // Update the 'notes' state to include the new note at the beginning of the array
+
+            // Update the 'notes' state to include the new note at the beginning of the array
         setNotes(prevNotes => [newNote, ...prevNotes])
 
-        // Set the 'currentNoteId' state to the ID of the newly created note
+            // Set the 'currentNoteId' state to the ID of the newly created note
         setCurrentNoteId(newNote.id)
     }
     
