@@ -33,6 +33,14 @@ import './style.css';
     // localStorage.setItem("myCat", "Tom");
 
 export default function App() {
+
+       /**
+     * Challenge: When the user edits a note, reposition
+     * it in the list of notes to the top of the list
+     */
+
+
+
    // Define state for notes and currentNoteId
     // const [notes, setNotes] = React.useState([])
     const [notes, setNotes] = React.useState(
@@ -72,11 +80,20 @@ export default function App() {
     }
     
     function updateNote(text) {
+        // Try to rearrange the most recently-modified
+        // not to be at the top
         setNotes(oldNotes => oldNotes.map(oldNote => {
             return oldNote.id === currentNoteId
                 ? { ...oldNote, body: text }
                 : oldNote
         }))
+        
+        // This does not rearrange the notes
+        // setNotes(oldNotes => oldNotes.map(oldNote => {
+        //     return oldNote.id === currentNoteId
+        //         ? { ...oldNote, body: text }
+        //         : oldNote
+        // }))
     }
     
     function findCurrentNote() {
