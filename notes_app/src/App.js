@@ -30,13 +30,20 @@ import './style.css';
      *    into a real JS array.
      */
 
-    
+    // localStorage.setItem("myCat", "Tom");
+
 export default function App() {
    // Define state for notes and currentNoteId
     const [notes, setNotes] = React.useState([])
     const [currentNoteId, setCurrentNoteId] = React.useState(
         (notes[0] && notes[0].id) || ""
     )
+    
+    // localStorage.setNotes(notes);
+    React.useEffect(() => {
+        localStorage.setItem("notes", JSON.stringify(notes))
+    }, [notes])
+
     
     // Define the function to create a new note
     function createNewNote() {
