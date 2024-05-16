@@ -18,6 +18,19 @@ import './style.css';
  * to fully understand everything to move on)
  */
 
+
+    /**
+     * Challenge:
+     * 1. Every time the `notes` array changes, save it 
+     *    in localStorage. You'll need to use JSON.stringify()
+     *    to turn the array into a string to save in localStorage.
+     * 2. When the app first loads, initialize the notes state
+     *    with the notes saved in localStorage. You'll need to
+     *    use JSON.parse() to turn the stringified array back
+     *    into a real JS array.
+     */
+
+    
 export default function App() {
    // Define state for notes and currentNoteId
     const [notes, setNotes] = React.useState([])
