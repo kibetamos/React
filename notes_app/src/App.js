@@ -34,7 +34,10 @@ import './style.css';
 
 export default function App() {
    // Define state for notes and currentNoteId
-    const [notes, setNotes] = React.useState([])
+    // const [notes, setNotes] = React.useState([])
+    const [notes, setNotes] = React.useState(
+        JSON.parse(localStorage.getItem("notes")) || []
+    )
     const [currentNoteId, setCurrentNoteId] = React.useState(
         (notes[0] && notes[0].id) || ""
     )
