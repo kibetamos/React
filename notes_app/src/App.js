@@ -83,7 +83,15 @@ export default function App() {
         // Try to rearrange the most recently-modified
         // not to be at the top
         setNotes(oldNotes => {
-            // Create a new empty array
+            const newArray = []
+            for(let i = 0; i < oldNotes.length; i++) {
+                const oldNote = oldNotes[i]
+                if(oldNote.id === currentNoteId) {
+                    newArray.unshift({ ...oldNote, body: text })
+                } else {
+                    newArray.push(oldNote)
+                }
+            }
             // Loop over the original array
                 // if the id matches
                     // put the updated note at the 
@@ -91,8 +99,10 @@ export default function App() {
                 // else
                     // push the old note to the end
                     // of the new array
-            // return the new array
+            return newArray
         })
+
+
         // This does not rearrange the notes
 
         // setNotes(oldNotes => oldNotes.map(oldNote => {
