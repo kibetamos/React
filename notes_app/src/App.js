@@ -36,9 +36,16 @@ export default function App() {
    // Define state for notes and currentNoteId
     // const [notes, setNotes] = React.useState([])
     const [notes, setNotes] = React.useState(
-        JSON.parse(localStorage.getItem("notes")) || []
+        () => JSON.parse(localStorage.getItem("notes")) || []
     )
-    const [currentNoteId, setCurrentNoteId] = React.useState(
+
+      /**
+     * Challenge:
+     * Lazily initialize our `notes` state so it doesn't
+     * reach into localStorage on every single re-render
+     * of the App component
+     */
+    const [currentNoteId, setCurrentNoteId] = React.useState( 
         (notes[0] && notes[0].id) || ""
     )
     
