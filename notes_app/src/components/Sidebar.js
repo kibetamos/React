@@ -36,11 +36,8 @@ export default function Sidebar(props) {
                 >
                     <i className="gg-trash trash-icon"></i>
                 </button>
-
             </div>
-
         </div>
-        
     ))
 
     return (
