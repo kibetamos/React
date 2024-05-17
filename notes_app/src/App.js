@@ -126,9 +126,16 @@ export default function App() {
      */
     
        function deleteNote(event, noteId) {
+
+        // Prevent the event from bubbling up to parent elements
+
         event.stopPropagation()
         // Your code here
         // console.log("deleted note", noteId)
+
+    // Update the state to remove the note with the specified noteId
+    // `setNotes` is a state updater function from a useState hook that takes the current state (oldNotes)
+    // and returns a new state (a filtered list excluding the note with the specified noteId)
         setNotes(oldNotes => oldNotes.filter(note => note.id !== noteId))
     }
 
