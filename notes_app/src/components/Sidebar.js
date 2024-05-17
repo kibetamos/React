@@ -21,7 +21,7 @@ export default function Sidebar(props) {
     const noteElements = props.notes.map((note, index) => (
         <div key={note.id}>
             <div
-            
+
                 
                 className={`title ${
                     note.id === props.currentNote.id ? "selected-note" : ""
@@ -36,8 +36,11 @@ export default function Sidebar(props) {
                 >
                     <i className="gg-trash trash-icon"></i>
                 </button>
+
             </div>
+
         </div>
+        
     ))
 
     return (
