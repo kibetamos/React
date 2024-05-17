@@ -7,12 +7,16 @@ export default function Editor({ currentNote, updateNote }) {
     //we are creating state
     const [selectedTab, setSelectedTab] = React.useState("write")
 
+    
     const converter = new Showdown.Converter({
         tables: true,
         simplifiedAutoLink: true,
+
         strikethrough: true,
+
         tasklists: true,
     })  
+
 
     return (
         <section className="pane editor">
