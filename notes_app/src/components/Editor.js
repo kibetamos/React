@@ -16,8 +16,7 @@ export default function Editor({ currentNote, updateNote }) {
 
         tasklists: true,
     })  
-
-    
+``
     return (
         <section className="pane editor">
             <ReactMde
@@ -25,6 +24,7 @@ export default function Editor({ currentNote, updateNote }) {
                 onChange={updateNote}
                 selectedTab={selectedTab}
                 onTabChange={setSelectedTab}
+                
                 generateMarkdownPreview={(markdown) =>
                     Promise.resolve(converter.makeHtml(markdown))
                 }
