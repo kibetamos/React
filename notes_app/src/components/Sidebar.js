@@ -16,8 +16,6 @@ export default function Sidebar(props) {
      * using the "\n" newline character as the divider
      */
 
-
-
     const noteElements = props.notes.map((note, index) => (
         <div key={note.id}>
             <div
@@ -37,6 +35,7 @@ export default function Sidebar(props) {
             </div>
         </div>
     ))
+
 
     return (
         <section className="pane sidebar">
