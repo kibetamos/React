@@ -16,6 +16,7 @@ export default function Editor({ currentNote, updateNote }) {
 
         tasklists: true,
     })  
+    
 ``
     return (
         <section className="pane editor">
@@ -28,10 +29,9 @@ export default function Editor({ currentNote, updateNote }) {
                 generateMarkdownPreview={(markdown) =>
                     Promise.resolve(converter.makeHtml(markdown))
                 }
-
                 minEditorHeight={80}
                 heightUnits="vh"
-                
+
             />
         </section>
     )
