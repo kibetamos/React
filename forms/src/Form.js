@@ -42,7 +42,6 @@ export default function Form() {
     //     setLastName(event.target.value)
 
     //}
-
     function handleSubmit(event){
         event.preventDefault()
         // submitToApi(formData)
