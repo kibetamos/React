@@ -16,7 +16,6 @@ export default function Editor({ currentNote, updateNote }) {
 
         tasklists: true,
     })  
-    
 
     return (
         <section className="pane editor">
