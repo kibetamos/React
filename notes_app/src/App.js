@@ -125,6 +125,7 @@ export default function App() {
      *    can be passed in during the onClick event handler
      */
     
+       
        function deleteNote(event, noteId) {
 
         // Prevent the event from bubbling up to parent elements
