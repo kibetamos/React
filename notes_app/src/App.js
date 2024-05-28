@@ -40,7 +40,6 @@ export default function App() {
      */
 
 
-
    // Define state for notes and currentNoteId
     // const [notes, setNotes] = React.useState([])
     const [notes, setNotes] = React.useState(
@@ -64,7 +63,7 @@ export default function App() {
 
     
     // Define the function to create a new note
-    function createNewNote() {
+    function createNewNote() {``
 
       // Create a new note object with a unique ID and default body
         const newNote = {
