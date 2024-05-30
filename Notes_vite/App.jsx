@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar"
 import Editor from "./components/Editor"
 import Split from "react-split"
 import { nanoid } from "nanoid"
-import { onSnapshot } from "firebase/firestore"
+import { onSnapshot, addDoc } from "firebase/firestore"
 import { notesCollection } from "./firebase"
 
 export default function App() {
@@ -37,6 +37,13 @@ export default function App() {
 
 
 
+    // async function createNewNote() {
+    //     const newNote = {
+    //         body: "# Type your markdown note's title here"
+    //     }
+    //     const newNoteRef = await addDoc(notesCollection, newNote)
+    //     setCurrentNoteId(newNoteRef.id)
+    // }
     async function createNewNote() {
         const newNote = {
             body: "# Type your markdown note's title here"
@@ -44,7 +51,6 @@ export default function App() {
         const newNoteRef = await addDoc(notesCollection, newNote)
         setCurrentNoteId(newNoteRef.id)
     }
-
 
     
     function updateNote(text) {
