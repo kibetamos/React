@@ -69,9 +69,9 @@ export default function App() {
         })
     }
 
-    function deleteNote(event, noteId) {
-        event.stopPropagation()
-        setNotes(oldNotes => oldNotes.filter(note => note.id !== noteId))
+    async function deleteNote(noteId) {
+       const docRef =  doc(db, "notes", noteId)
+       await deleteDoc(docRef)
     }
 
     return (
