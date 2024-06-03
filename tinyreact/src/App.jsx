@@ -4,13 +4,23 @@ import './App.css'
 
 function App() {
   // const [count, setCount] = useState(0)
+  const animals = ['Lion', 'Cow','Snake','Lizard'];
+
 
   return (
-    <>
-      <p className="read-the-docs">
-        {/* Hello World */}
-      </p>
-    </>
+    <div>
+      <h1>Animals: </h1>
+      <ul>
+        {/* <li>Lion</li>
+        <li>Cow</li>
+        <li>Snake</li>
+        <li>Lizard</li> */}
+        {animals.map((animal) => {
+          return <li key={animal}> {animal}</li>
+        }
+      )}
+      </ul>
+    </div>
   )
 }
 
