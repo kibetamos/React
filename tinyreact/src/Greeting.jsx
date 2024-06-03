@@ -1,7 +1,7 @@
 
 
 
-function Greeting(){
+export default function Greeting(){
     return(
         <div>
             <p>Buuda</p>
@@ -9,4 +9,3 @@ function Greeting(){
     )
 }
 
-export default Greeting
