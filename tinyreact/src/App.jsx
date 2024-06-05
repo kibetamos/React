@@ -1,6 +1,9 @@
 import { useState } from 'react'
+import List from './List';
 
 export default function App() {
+
+
 
   const animals = ['Lion', 'Cow','Snake','Lizard'];
   const animalsList = animals.map((animal) => <li>{animal}</li>)
