@@ -19,17 +19,3 @@ export default function App() {
   )
 }
 
-
-// const names = ['Alice', 'Bob', 'Charlie', 'David'];
-
-// const NameList = () => {
-//   return (
-//     <ul>
-//       {names.map((name, index) => (
-//         <li key={index}>{name}</li>
-//       ))}
-//     </ul>
-//   );
-// };
-
-// export default NameList;
