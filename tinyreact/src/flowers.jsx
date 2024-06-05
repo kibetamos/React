@@ -13,11 +13,4 @@ export default function Flower(){
            ))}
         </div>
     )
-}      {/* {animals.map((animal) => (
-          
-    <li key={animal}>
-
-      {animal}
-      
-      </li>
-  ))} */}
+}     
