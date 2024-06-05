@@ -20,7 +20,9 @@ export default function App() {
       Each item in the `animals` array is rendered as an <li> element with a unique `key` attribute.
     */}
         {animals.map((animal) => {
-          return <li key={animal}> {animal}</li>
+          return <li key={animal}>                                                                           
+          {animal}
+          </li>
         }
       )}
       </ul>
