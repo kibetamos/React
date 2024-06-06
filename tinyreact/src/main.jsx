@@ -17,3 +17,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <Greeting /> */}
   </React.StrictMode>,
 )
+
+
+return (
+  <div>
+    <img src="jsx_sample.jpg" alt="jsx_image" />
+  </div>
+);
