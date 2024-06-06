@@ -19,8 +19,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 
 
-return (
-  <div>
-    <img src="jsx_sample.jpg" alt="jsx_image" />
-  </div>
-);
+// return (
+//   <div>
+//     <img src="jsx_sample.jpg" alt="jsx_image" />
+//   </div>
+// );
