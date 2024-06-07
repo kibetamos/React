@@ -27,3 +27,14 @@ export default function App() {
   );
 }
 
+
+
+
+
+// const obj2 = {
+//   true: 'Boolean',
+//   'true': 'String',
+//  };
+ 
+//  console.assert(obj2[true] === 'String');
+ 
