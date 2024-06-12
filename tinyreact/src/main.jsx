@@ -10,8 +10,8 @@ import List from './List.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-    {/* < List/> */}
+    {/* <App /> */}
+    < List name="Amok"/>
     {/* < Flower /> */}
     {/* < UserList/> */}
     {/* <Greeting /> */}
