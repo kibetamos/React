@@ -3,6 +3,13 @@ import App from './App';
 
 
 export default function Greeting(props){
+
+    if(!props.greetings)
+        return<h1>Loading ...</h1>
+
+    if(props.greetings.length === 0){
+        return<h1>We do not have anything in the list</h1>
+    }
     return(
         // <h1>
             
