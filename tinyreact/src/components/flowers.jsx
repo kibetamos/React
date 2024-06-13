@@ -24,7 +24,12 @@ export default function Flower(props){
 
            {props.flowers.map((flower) => {
 
-            return <li key={flower}>{flower}</li>
+            return flower.startsWith("A") ? <li key={flower}>{flower}</li> : null;
+            // lower.sta<li key={flower}>{flower}</li>
+
+            // return an.startsWith("L") ? <li key={an}>{an}</li> : null;
+
+
             })}
         </div>
     );

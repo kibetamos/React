@@ -21,7 +21,7 @@ export default function Greeting(props){
         <div>
             {props.greetings.map((greeting) =>{
 
-                return<li>{greeting}</li>
+                return greeting.startsWith("s") ? <li>{greeting}</li> : null;
 
             })}
         </div>

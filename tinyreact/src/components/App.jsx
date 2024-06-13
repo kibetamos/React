@@ -16,6 +16,8 @@ export default function App() {
   // const animalsList = animals.map((animal) => <li>{animal}</li>)
 
   return (
+
+    
     <div>
       
       <h1>Animals: </h1>
