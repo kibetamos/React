@@ -6,12 +6,15 @@ export default function App() {
 
 
   const animals = ['Lion', 'Cow','Snake','Lizard'];
+  
   const animalsList = animals.map((animal) => <li>{animal}</li>)
 
   return (
     <div>
       <h1>Animals: </h1>
-      <ul>
+
+      <List animals = {animals} />
+      {/* <ul> */}
         {/* {animals.map((animal) => (
           
           <li key={animal}>
@@ -20,9 +23,9 @@ export default function App() {
             
             </li>
         ))} */}
-        {animalsList}
+        {/* {animalsList} */}
         
-      </ul>
+      {/* </ul> */}
     </div>
   );
 }

@@ -10,12 +10,12 @@ import List from './List.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     {/* < List name="Amok" age={12} isStudent={true}/>
     < List name="Willy" age={30} isStudent={false}/> */}
     {/* < Flower /> */}
     {/* < UserList/> */}
-    <Greeting />
+    {/* <Greeting /> */}
   </React.StrictMode>,
 )
 
