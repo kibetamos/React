@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import List from './List';
-
+import Flower from './flowers';
 export default function App() {
 
 
 
   const animals = ['Lion', 'Cow','Snake','Lizard'];
+
+  const flowers = ['Rose', 'Lily', 'Daisy', 'Azalea'];
   
   // const animalsList = animals.map((animal) => <li>{animal}</li>)
 
@@ -14,6 +16,8 @@ export default function App() {
       <h1>Animals: </h1>
 
       <List animals = {animals} />
+
+      <flower flowers = {flowers} />
       {/* <ul> */}
         {/* {animals.map((animal) => (
           

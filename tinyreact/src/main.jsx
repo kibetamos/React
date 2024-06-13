@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
     {/* < List name="Amok" age={12} isStudent={true}/>
     < List name="Willy" age={30} isStudent={false}/> */}
-    {/* < Flower /> */}
+    < Flower />
     {/* < UserList/> */}
     {/* <Greeting /> */}
   </React.StrictMode>,
