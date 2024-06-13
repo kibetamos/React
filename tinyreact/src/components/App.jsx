@@ -2,10 +2,11 @@ import { useState } from 'react'
 import List from './List';
 import Flower from './flowers';
 import Greeting from './Greeting';
-
+import Car from './Car';
 
 export default function App() {
 
+  const cars = ['Honda', 'Toyota', 'Benzo', 'VW', 'Nissan',',Mazda'];
 
   const greetings = ['habari', 'shikamoo', 'sabalkheri', 'masalkheri', 'aheri'];
 
@@ -17,7 +18,7 @@ export default function App() {
 
   return (
 
-    
+
     <div>
       
       <h1>Animals: </h1>
@@ -29,6 +30,9 @@ export default function App() {
 
       <h1>Greetings: </h1>
       <Greeting greetings = {greetings}/>
+
+      <h1>Cars</h1>
+      <Car cars ={cars}/>
       
       {/* <ul> */}
         {/* {animals.map((animal) => (

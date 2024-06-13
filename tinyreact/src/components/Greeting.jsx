@@ -18,13 +18,13 @@ export default function Greeting(props){
         //     &quot;
             
         //     </h1>
-        <div>
+        <ul>
             {props.greetings.map((greeting) =>{
 
                 return greeting.startsWith("s") ? <li>{greeting}</li> : null;
 
             })}
-        </div>
+        </ul>
         // {props.animals.map((an) =>{
         //     return an.startsWith("L") ? <li key={an}>{an}</li> : null;
         //   })}

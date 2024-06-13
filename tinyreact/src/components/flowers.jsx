@@ -15,7 +15,7 @@ export default function Flower(props){
     // const flowers = ['Rose', 'Lily', 'Daisy', 'Azalea'];
 // console.log(props.flowers)
     return(
-        <div>
+        <ul>
             {/* {flowers.map((flow) => (
                 <li key={flow}>
                    <p>{flow}</p> 
@@ -31,6 +31,6 @@ export default function Flower(props){
 
 
             })}
-        </div>
+        </ul>
     );
 }     
