@@ -17,8 +17,8 @@ export default function List(props){
     return(
       <ul>
 {/* we are usig the map array to iterate over each element of the props.animals */}
-        {props.animals.map((animal) =>{
-          return animal.startsWith("L") ? <li key={animal}>{animal}</li> : null;
+        {props.animals.map((an) =>{
+          return an.startsWith("L") ? <li key={an}>{an}</li> : null;
         })}
       </ul>
       //   <ul>
