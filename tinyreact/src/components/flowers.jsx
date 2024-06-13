@@ -15,9 +15,10 @@ export default function Flower(props){
                 </li>
            ))} */}
 
-           {props.flowers.map((flow) => {
-            <li key={flow}>{flow}</li>
-})}
+           {props.flowers.map((flower) => {
+
+            return <li key={flower}>{flower}</li>
+            })}
         </div>
     );
 }     

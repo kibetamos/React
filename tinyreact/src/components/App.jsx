@@ -21,6 +21,7 @@ export default function App() {
       {/* <List animals = {animals} /> */}
 
       <Flower flowers = {flowers} />
+      
       {/* <ul> */}
         {/* {animals.map((animal) => (
           
