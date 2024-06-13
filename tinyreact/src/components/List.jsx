@@ -11,7 +11,7 @@ export default function List(props){
 
   if(props.animals.length === 0){
     // If the props.animals array is defined but empty, return a message indicating that there are no animals in the list.
-    return<div>There are noanimals in the list</div>;
+    return<div>There are no animals in the list</div>;
   }
 
     return(

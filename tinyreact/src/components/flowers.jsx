@@ -4,6 +4,13 @@ import App from './App';
 
 
 export default function Flower(props){
+    if(!props.flowers){
+        return<h1>LOading ...</h1>;
+    }
+
+    if (props.flowers.length === 0 ){
+        return<h1>There are no flowers here</h1>;
+    }
 
     // const flowers = ['Rose', 'Lily', 'Daisy', 'Azalea'];
 // console.log(props.flowers)
