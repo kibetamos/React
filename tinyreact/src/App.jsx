@@ -7,7 +7,7 @@ export default function App() {
 
   const animals = ['Lion', 'Cow','Snake','Lizard'];
   
-  const animalsList = animals.map((animal) => <li>{animal}</li>)
+  // const animalsList = animals.map((animal) => <li>{animal}</li>)
 
   return (
     <div>

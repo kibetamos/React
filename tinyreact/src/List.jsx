@@ -4,6 +4,14 @@ import App from './App';
 
 export default function List(props){
 
+  if(!props.animals){
+    return <div>Loading ...</div>;
+  }
+
+  if(props.animals.length === 0){
+    return<div>There are noanimals in the list</div>;
+  }
+
     return(
       <ul>
 {/* we are usig the map array to iterate over each element of the props.animals */}
