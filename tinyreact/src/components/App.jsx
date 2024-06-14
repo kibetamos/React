@@ -3,8 +3,10 @@ import List from './List';
 import Flower from './flowers';
 import Greeting from './Greeting';
 import Car from './Car';
+import Teams from './teams';
 
 export default function App() {
+  const teams = ['Mavs', 'Warrioes', 'Bulls', 'Bucks', 'Wolves','Suns'];
 
   const cars = ['Honda', 'Toyota', 'Benzo', 'VW', 'Nissan',',Mazda'];
 
@@ -33,6 +35,8 @@ export default function App() {
 
       <h1>Cars</h1>
       <Car cars ={cars}/>
+      <h1>Teams</h1>
+      <Teams teams ={teams}/>
       
       {/* <ul> */}
         {/* {animals.map((animal) => (
