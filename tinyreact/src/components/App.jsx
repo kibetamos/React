@@ -4,6 +4,8 @@ import Flower from './flowers';
 import Greeting from './Greeting';
 import Car from './Car';
 import Teams from './teams';
+import Button from './buttons';
+
 
 export default function App() {
   const teams = ['Mavs', 'Warrioes', 'Bulls', 'Bucks', 'Wolves','Suns'];
@@ -23,21 +25,25 @@ export default function App() {
 
     <div>
       
-      <h1>Animals: </h1>
-      <List animals = {animals} />
+      {/* <h1>Animals: </h1>
+      <List animals = {animals} /> */}
 
       <h1>Flowers: </h1>
       <Flower flowers = {flowers} />
 
 
-      <h1>Greetings: </h1>
-      <Greeting greetings = {greetings}/>
+      {/* <h1>Greetings: </h1>
+      <Greeting greetings = {greetings}/> */}
 
       <h1>Cars</h1>
       <Car cars ={cars}/>
       <h1>Teams</h1>
       <Teams teams ={teams}/>
-      
+     <div>
+     <Button text="Click Me!" color="blue" fontSize={12}/>
+     <Button text="Don't Click Me!" color="red" fontSize={12}/>
+     <Button text="Click Me!" color="blue" fontSize={20}/>
+      </div>
       {/* <ul> */}
         {/* {animals.map((animal) => (
           
