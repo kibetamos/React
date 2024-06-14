@@ -11,6 +11,7 @@ export default function Car(props){
             {props.cars.map((magari) =>{
 
                 return magari.endsWith("o") ? <li>{magari}</li> : null;
+                
             })}
 
         </ul>
