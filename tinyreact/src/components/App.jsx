@@ -5,7 +5,7 @@ import Greeting from './Greeting';
 import Car from './Car';
 import Teams from './teams';
 import Button from './buttons';
-
+import Person from './person';
 
 export default function App() {
   const teams = ['Mavs', 'Warrioes', 'Bulls', 'Bucks', 'Wolves','Suns'];
@@ -43,6 +43,7 @@ export default function App() {
      <Button text="Click Me!" color="blue" fontSize={12}/>
      <Button text="Don't Click Me!" color="red" fontSize={12}/>
      <Button text="Click Me!" color="blue" fontSize={20}/>
+     <Person />
       </div>
       {/* <ul> */}
         {/* {animals.map((animal) => (
