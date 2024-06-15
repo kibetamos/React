@@ -12,7 +12,7 @@ export default function Teams(props){
     return(
         <div>
             {props.teams.map((team) =>{
-                return team.startsWith("M") ? <li>{team}</li> : null;
+                return team.startsWith("M") ? <li key={team}>{team}</li> : null;
             })}
         </div>
     )
