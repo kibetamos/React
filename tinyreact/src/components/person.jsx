@@ -7,8 +7,8 @@ export default function Person(){
         age: 10
     })
     const[formData, setFormData] = React.useState({
-        firstname: 'firstname',
-        lastname: 'lastname'
+        firstName: 'firstname',
+        lastName: 'lastname'
     })
 
 
@@ -25,8 +25,6 @@ function IncreaseAge(){
 
 function handleChange(event){
     event.preventDefault()
-
-
 }
 
 function DecreaseAge(){
@@ -40,14 +38,15 @@ function DecreaseAge(){
             placeholder="Firstname"
             onChange={handleChange}
             name="firstname"
-            // value={formData.lastName}
+            value={formData.firstName}
             />
               <input type="text" 
             placeholder="Lastname"
             onChange={handleChange}
             name="lastname"
-            // value={formData.lastName}
+            value={formData.lastName}
             />
+            <button >Submit</button>
             </form>
 
         <h1>{person.name}</h1>
