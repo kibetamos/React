@@ -39,12 +39,13 @@ export default function App() {
       <Car cars ={cars}/>
       <h1>Teams</h1>
       <Teams teams ={teams}/>
-     <div>
-     <Button text="Click Me!" color="blue" fontSize={12}/>
+     
+     <h1>Person</h1>
+     {/* <Button text="Click Me!" color="blue" fontSize={12}/>
      <Button text="Don't Click Me!" color="red" fontSize={12}/>
-     <Button text="Click Me!" color="blue" fontSize={20}/>
+     <Button text="Click Me!" color="blue" fontSize={20}/> */}
      <Person />
-      </div>
+      
       {/* <ul> */}
         {/* {animals.map((animal) => (
           

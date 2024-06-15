@@ -20,14 +20,24 @@ function IncreaseAge(){
 }
 
 
-
-
-
 function DecreaseAge(){
     setPerson({...person, age:person.age-1})
 }
     return(
         <div>
+            {/* <input /> */}
+            <input type="text" 
+            placeholder="firstname"
+            // onChange={handleChange}
+            name="firstname"
+            // value={formData.lastName}
+            />
+              <input type="text" 
+            placeholder="firstname"
+            // onChange={handleChange}
+            name="firstname"
+            // value={formData.lastName}
+            />
 
         <h1>{person.name}</h1>
         <h2>{person.age}</h2>
