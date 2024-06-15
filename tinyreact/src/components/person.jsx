@@ -21,6 +21,8 @@ function IncreaseAge(){
 
 
 
+
+
 function DecreaseAge(){
     setPerson({...person, age:person.age-1})
 }
