@@ -19,12 +19,18 @@ function IncreaseAge(){
 
 }
 
+function handleChange(event){
+    event.preventDefault()
+    
+
+}
 
 function DecreaseAge(){
     setPerson({...person, age:person.age-1})
 }
     return(
         <div>
+            <form onSubmit={handleChange}>
             {/* <input /> */}
             <input type="text" 
             placeholder="firstname"
@@ -33,11 +39,12 @@ function DecreaseAge(){
             // value={formData.lastName}
             />
               <input type="text" 
-            placeholder="firstname"
+            placeholder="lastname"
             // onChange={handleChange}
-            name="firstname"
+            name="lastname"
             // value={formData.lastName}
             />
+            </form>
 
         <h1>{person.name}</h1>
         <h2>{person.age}</h2>
