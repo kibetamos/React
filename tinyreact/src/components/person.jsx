@@ -7,8 +7,9 @@ export default function Person(){
         age: 10
     })
     const[formData, setFormData] = React.useState({
-        firstName: 'firstname',
-        lastName: 'lastname'
+
+        firstName: "",
+        lastName: ""
     })
 
 
@@ -23,8 +24,13 @@ function IncreaseAge(){
 
 }
 function handleChange(event){
-    setFormData(prevFormData => {
 
+    const {name, value, type, checked} = event.target
+
+    setFormData(prevFormData => {
+        return{
+            ...prevFormData, [event.target.name]: event.target.value
+        }
 
     })}
 
@@ -44,19 +50,21 @@ function DecreaseAge(){
             <form onSubmit={handleSubmit}>
             {/* <input /> */}
             <input type="text" 
-            placeholder="Firstname"
+            placeholder="First name"
             onChange={handleChange}
-            name="firstname"
+            name="firstName"
             value={formData.firstName}
             />
 
-              <input type="text" 
-            placeholder="Lastname"
+            <input type="text" 
+            placeholder="Last name"
             onChange={handleChange}
-            name="lastname"
+            name="lastName"
             value={formData.lastName}
             />
+            
             <button >Submit</button>
+
             </form>
 
         <h1>{person.name}</h1>
