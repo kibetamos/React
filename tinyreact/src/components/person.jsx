@@ -29,7 +29,7 @@ function handleChange(event){
 
     setFormData(prevFormData => {
         return{
-            
+
             ...prevFormData, [event.target.name]: event.target.value
         }
 
@@ -44,6 +44,7 @@ function handleSubmit(event){
 
 
 function DecreaseAge(){
+    
     setPerson({...person, age:person.age-1})
 }
     return(
