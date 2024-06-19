@@ -23,6 +23,17 @@ const handleChange = (taskId) => {
 
 return(
     <div>
+        <form>
+        <input
+            type="text"
+            placeholder="Add Task"
+            onChange={handleChange}
+            name="task"
+            // value={formData.firstName}
+            />
+
+            <button>Add Task</button>
+</form>
     {tasks.map(task => (
         <h2 key={task.id}>
            {task.id} 
