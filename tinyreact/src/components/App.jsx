@@ -73,3 +73,6 @@ export default function App() {
  
 //  console.assert(obj2[true] === 'String');
  
+
+
+const [stateValue, setStateValue] = React.useState(initialValue);

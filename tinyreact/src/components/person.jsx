@@ -44,10 +44,11 @@ function handleSubmit(event){
 
 
 function DecreaseAge(){
-    
+
     setPerson({...person, age:person.age-1})
 }
     return(
+        
         <div>
             <form onSubmit={handleSubmit}>
             {/* <input /> */}
@@ -78,3 +79,5 @@ function DecreaseAge(){
 
     );
 }
+
+
