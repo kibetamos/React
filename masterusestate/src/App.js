@@ -297,10 +297,12 @@
 import './App.css';
 // import Form from './Form';
 import Challenge1 from './Challenge1';
+import Task from './Task';
 function App() {
   return (
     <div>
           <Challenge1/>   
+          <Task />
     </div>
   );
 }
