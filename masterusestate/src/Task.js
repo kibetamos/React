@@ -3,7 +3,6 @@ import React from "react";
 export default function Task(){
     const [newTask, setNewTask] = React.useState("");
     const[tasks, setTasks] = React.useState([
-
         { id: 1, name: "Buy groceries", isCompleted: false },
         { id: 2, name: "Walk the dog", isCompleted: false },
         { id: 3, name: "Do laundry", isCompleted: false },
@@ -19,7 +18,6 @@ export default function Task(){
         
 //     }));
 
-
     // console.log(tasks.isCompleted)
     const handleCheckboxChange = (taskId) => {
         setTasks(tasks.map(task => {
@@ -29,8 +27,6 @@ export default function Task(){
             return task;
         }));
     };
-
-
 
 const handleTaskChange = (e) => {
         setNewTask(e.target.value);
