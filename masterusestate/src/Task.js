@@ -8,33 +8,51 @@ export default function Task(){
         { id: 3, name: "Do laundry", isCompleted: false },
 ]);
 
-const handleChange = (taskId) => {
-    setTasks(tasks.map(task => {
-        if (task.id === taskId) {
-            return { ...task, isCompleted: !task.isCompleted };
-        }
-        return task;
+// const handleChange = (taskId) => {
+//     setTasks(tasks.map(task => {
+//         if (task.id === taskId) {
+//             return { ...task, isCompleted: !task.isCompleted };
+//         }
+//         return task;
 
         
-    }));
+//     }));
+function handleChange(e) {
+    const {name, value, type, checked} = e.target
+    // setTasks(prevtasks => {
+    //     return {
+    //         ...prevtasks,
+    //         // [event.target.name]: event.target.value
+    //         [name]: type === "checkbox" ? checked : value
+    //     }
+    // })
+}
 
-    console.log(tasks.isCompleted)
-};
+    // console.log(tasks.isCompleted)
 
+
+
+function handleSubmit(event){
+    event.preventDefault()
+
+    console.log(tasks)
+
+}
 return(
     <div>
-        <form>
+        <form onSubmit={handleSubmit}>
         <input
             type="text"
             placeholder="Add Task"
             onChange={handleChange}
-            name="task"
+            name="tsask"
             // value={formData.firstName}
             />
 
             <button>Add Task</button>
 </form>
-    {tasks.map(task => (
+
+        {tasks.map(task => (
         <h2 key={task.id}>
            {task.id} 
            
@@ -43,13 +61,14 @@ return(
            <input 
             type="checkbox"
             id="isComplete"
-            onChange={() => handleChange(task.id)}
+            onChange={handleChange}
             checked={task.isCompleted}
             name="isCompleted"
             />
         </h2>
 
     ))},
+            
     
     
         </div>
