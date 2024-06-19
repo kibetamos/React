@@ -246,7 +246,7 @@ export default function App() {
      * `true` => "star-filled.png"
      * `false` => "star-empty.png"
      * 
-     * contact.isFavourite ? star-filled.png  : star-empty.png
+     * contact.isFavourite ? star-filled.png  : 
      */
 
 
