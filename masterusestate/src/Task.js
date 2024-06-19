@@ -31,19 +31,21 @@ export default function Task(){
         }));
     };
 
-function filteredTasks() {
-    if (filter === 'completed') {
-        return tasks.filter(task => task.isCompleted);
-    } else if (filter === 'notCompleted') {
-        return tasks.filter(task => !task.isCompleted);
-    } else {
-        return tasks;
-    }
-    }
+  // This function sets the filter to 'all'
+  function showAll() {
+    setFilter('all');
+  }
 
+
+  function show(){
+    return tasks.isCompleted ? "SHOW completed" : "show incomplete"
+  }
+
+  
 const handleTaskChange = (e) => {
         setNewTask(e.target.value);
     };
+
 
 function handleSubmit(event){
     event.preventDefault();
@@ -88,8 +90,8 @@ return(
         </h2>
 
     ))},
-     <button onClick={() => setFilter('all')}>All</button>       
-    
+     {/* <button onClick={() => setFilter('all')}>All</button>        */}
+     <button onClick={show}>All</button>
     
         </div>
 );
