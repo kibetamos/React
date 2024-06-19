@@ -37,18 +37,11 @@ const handleTaskChange = (e) => {
     };
 
 function handleSubmit(event){
-    event.preventDefault();
-    if (newTask.trim() !== "") {
-        setTasks(prevTasks => [
-            ...prevTasks,
-            { id: prevTasks.length + 1, name: newTask, isCompleted: true },
-        ]);
-        setNewTask("");
-    }
+    event.preventDefault()
+
+    console.log(tasks)
 
 }
-
-
 return(
     <div>
         <form onSubmit={handleSubmit}>
