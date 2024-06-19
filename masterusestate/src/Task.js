@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Task(){
+    const [newTask, setNewTask] = React.useState("");
     const[tasks, setTasks] = React.useState([
 
         { id: 1, name: "Buy groceries", isCompleted: false },
@@ -17,35 +18,46 @@ export default function Task(){
 
         
 //     }));
-function handleChange(e) {
-    const {name, value, type, checked} = e.target
-    // setTasks(prevtasks => {
-    //     return {
-    //         ...prevtasks,
-    //         // [event.target.name]: event.target.value
-    //         [name]: type === "checkbox" ? checked : value
-    //     }
-    // })
-}
+
 
     // console.log(tasks.isCompleted)
+    const handleCheckboxChange = (taskId) => {
+        setTasks(tasks.map(task => {
+            if (task.id === taskId) {
+                return { ...task, isCompleted: !task.isCompleted };
+            }
+            return task;
+        }));
+    };
 
 
+
+const handleTaskChange = (e) => {
+        setNewTask(e.target.value);
+    };
 
 function handleSubmit(event){
-    event.preventDefault()
-
-    console.log(tasks)
+    event.preventDefault();
+    if (newTask.trim() !== "") {
+        setTasks(prevTasks => [
+            ...prevTasks,
+            { id: prevTasks.length + 1, name: newTask, isCompleted: true },
+        ]);
+        setNewTask("");
+    }
 
 }
+
+
 return(
     <div>
         <form onSubmit={handleSubmit}>
         <input
             type="text"
             placeholder="Add Task"
-            onChange={handleChange}
-            name="tsask"
+            onChange={handleTaskChange}
+            name="task"
+            value={newTask}
             // value={formData.firstName}
             />
 
@@ -58,13 +70,12 @@ return(
            
            .{task.name} 
 
-           <input 
-            type="checkbox"
-            id="isComplete"
-            onChange={handleChange}
-            checked={task.isCompleted}
-            name="isCompleted"
-            />
+           <input
+                        type="checkbox"
+                        onChange={() => handleCheckboxChange(task.id)}
+                        checked={task.isCompleted}
+                        name="isCompleted"
+                    />
         </h2>
 
     ))},
