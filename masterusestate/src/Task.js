@@ -10,26 +10,17 @@ export default function Task(){
         { id: 3, name: "Do laundry", isCompleted: false },
 ]);
 
-// const handleChange = (taskId) => {
-//     setTasks(tasks.map(task => {
-//         if (task.id === taskId) {
-//             return { ...task, isCompleted: !task.isCompleted };
-//         }
-//         return task;
-
-        
-//     }));
 
 
     // console.log(tasks.isCompleted)
-    const handleCheckboxChange = (taskId) => {
-        setTasks(tasks.map(task => {
-            if (task.id === taskId) {
-                return { ...task, isCompleted: !task.isCompleted };
-            }
-            return task;
-        }));
-    };
+const handleChange = (taskId) => {
+    setTasks(tasks.map(task => {
+        if (task.id === taskId) {
+            return { ...task, isCompleted: !task.isCompleted };
+        }
+        return task;
+    }));
+};
 
   // This function sets the filter to 'all'
   function showAll() {
@@ -41,14 +32,14 @@ export default function Task(){
     return tasks.isCompleted ? "SHOW completed" : "show incomplete"
   }
 
-  
+
 const handleTaskChange = (e) => {
         setNewTask(e.target.value);
     };
 
 
-function handleSubmit(event){
-    event.preventDefault();
+function handleSubmit(e){
+    e.preventDefault();
     if (newTask.trim() !== "") {
         setTasks(prevTasks => [
             ...prevTasks,
@@ -58,7 +49,6 @@ function handleSubmit(event){
     }
 
 }
-
 
 return(
     <div>
@@ -83,7 +73,7 @@ return(
 
            <input
                         type="checkbox"
-                        onChange={() => handleCheckboxChange(task.id)}
+                        onChange={() => handleChange(task.id)}
                         checked={task.isCompleted}
                         name="isCompleted"
                     />
