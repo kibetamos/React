@@ -298,11 +298,13 @@ import './App.css';
 // import Form from './Form';
 import Challenge1 from './Challenge1';
 import Task from './Task';
+import Form from './Forms';
 function App() {
   return (
     <div>
           <Challenge1/>   
-          <Task />
+          {/* <Task /> */}
+          <Form />
     </div>
   );
 }
