@@ -22,8 +22,14 @@ export default function Form(){
     console.log(formData)
   };
 
+
+    // Handle form submission
   const handleSubmit = (event) => {
+
+    // prevent the default form submission
     event.preventDefault();
+
+    // Display the form values
     console.log('Form submitted:', formData);
   };
 
