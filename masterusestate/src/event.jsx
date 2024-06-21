@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 
 const EventHandlingComponent = () => {
+    
   const [inputValue, setInputValue] = useState('');
+
   const [formSubmitted, setFormSubmitted] = useState(false);
 
 
