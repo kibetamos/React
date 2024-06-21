@@ -4,8 +4,11 @@ const EventHandlingComponent = () => {
   const [inputValue, setInputValue] = useState('');
   const [formSubmitted, setFormSubmitted] = useState(false);
 
+
   const handleClick = () => {
+
     alert('Button clicked!');
+    
   };
 
   const handleChange = (event) => {
@@ -45,7 +48,7 @@ const EventHandlingComponent = () => {
             {formSubmitted && <p>Form was submitted with value: {inputValue}</p>}
             </div>
   );
-  
+
 };
 
 export default EventHandlingComponent;
