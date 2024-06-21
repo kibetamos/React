@@ -8,7 +8,7 @@ const EventHandlingComponent = () => {
   const handleClick = () => {
 
     alert('Button clicked!');
-    
+
   };
 
   const handleChange = (event) => {
@@ -16,8 +16,11 @@ const EventHandlingComponent = () => {
   };
 
   const handleSubmit = (event) => {
+
     event.preventDefault();
+    //change the state from false to true.
     setFormSubmitted(true);
+
     console.log('Form submitted with value:', inputValue);
   };
 
