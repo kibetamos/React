@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const EventHandlingComponent = () => {
-    
+
   const [inputValue, setInputValue] = useState('');
 
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -29,6 +29,7 @@ const EventHandlingComponent = () => {
   return (
 
             <div>
+                {/* <button onClick={handleClick}></button> */}
 
             <button onClick={handleClick}>Click Me!</button>
 
