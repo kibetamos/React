@@ -299,12 +299,14 @@ import './App.css';
 import Challenge1 from './Challenge1';
 import Task from './Task';
 import Form from './Forms';
+import Student from './student';
 function App() {
   return (
     <div className="App-header">
           {/* <Challenge1/>    */}
           {/* <Task /> */}
-          <Form />
+          {/* <Form /> */}
+          < Student />
     </div>
   );
 }

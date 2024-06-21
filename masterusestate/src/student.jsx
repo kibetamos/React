@@ -3,6 +3,12 @@ import React from "react";
 export default function Student(){
 
 
+    const[studentData, setStudentData] = React.useState({
+        firstName:'ww',
+        lastName:'rr',
+        School:'eee'
+    })
+
     return(
         <div>
             <form>
@@ -11,21 +17,19 @@ export default function Student(){
                 type="text"
                 placeholder="Firstname"
                 onChange={handleChange}
-                value={text}/>
+                value={studentData.firstName}/>
 
                 <input 
                 type="text"
                 placeholder="Lastname"
                 onChange={handleChange}
-                value={text}/>
-
-
+                value={studentData.lastName}/>
 
                 <input 
                 type="text"
                 placeholder="school"
                 onChange={handleChange}
-                value={text}/>
+                value={studentData.School}/>
 
 
             </form>
