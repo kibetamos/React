@@ -15,7 +15,7 @@ export default function Student(){
 
                 <input 
                 type="text"
-                placeholder="Firstname"
+                placeholder="Lastname"
                 onChange={handleChange}
                 value={text}/>
 
@@ -23,7 +23,7 @@ export default function Student(){
 
                 <input 
                 type="text"
-                placeholder="Firstname"
+                placeholder="school"
                 onChange={handleChange}
                 value={text}/>
 
