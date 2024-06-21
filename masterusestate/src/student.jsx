@@ -9,6 +9,10 @@ export default function Student(){
         School:'eee'
     })
 
+   function handleChange(e){
+       setStudentData(e.target.value)
+    }
+
     return(
         <div>
             <form>
@@ -30,6 +34,8 @@ export default function Student(){
                 placeholder="school"
                 onChange={handleChange}
                 value={studentData.School}/>
+
+                <button>SAVE</button>
 
 
             </form>
