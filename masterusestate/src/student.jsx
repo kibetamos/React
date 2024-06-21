@@ -10,7 +10,9 @@ export default function Student(){
     })
 
    function handleChange(e){
+
        setStudentData(e.target.value)
+       
     }
 
     return(
