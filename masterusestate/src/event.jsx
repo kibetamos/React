@@ -14,7 +14,9 @@ const EventHandlingComponent = () => {
   };
 
   const handleChange = (event) => {
+
     setInputValue(event.target.value);
+    
   };
 
   const handleSubmit = (event) => {
