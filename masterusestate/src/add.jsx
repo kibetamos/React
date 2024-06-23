@@ -7,6 +7,7 @@ export default function Add(){
     })
 
     function handlechange(){
+      setValues
 
     }
 
@@ -28,6 +29,8 @@ export default function Add(){
         placeholder="Number 2"
         onChange={handlechange}
         value={values.number2}/>
+
+        <button>ADD</button>
 
       </form>
     )
