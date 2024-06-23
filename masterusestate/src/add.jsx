@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Add(){
-    cont [values, setValues] = React.useState({
+    const [values, setValues] = React.useState({
         number1: '',
         number2: ''
     })
@@ -10,8 +10,10 @@ export default function Add(){
 
     }
 
-    
+    function handleSubmit(){
 
+    }
+    
     return(
 
       <Form onSubmit={handleSubmit}>
