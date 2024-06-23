@@ -300,13 +300,15 @@ import Challenge1 from './Challenge1';
 import Task from './Task';
 import Form from './Forms';
 import Student from './student';
+import Add from './add';
 function App() {
   return (
     <div className="App-header">
           {/* <Challenge1/>    */}
           {/* <Task /> */}
           {/* <Form /> */}
-          < Student />
+          {/* < Student /> */}
+          <Add />
     </div>
   );
 }

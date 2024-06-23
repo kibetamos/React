@@ -6,15 +6,26 @@ export default function Add(){
         number2: ''
     })
 
+    function handlechange(){
+
+    }
+
+    
 
     return(
 
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <input 
         type="text"
         placeholder="Number 1"
         onChange={handlechange}
-        value={}/>
+        value={values.number1}/>
+
+        <input 
+        type="text"
+        placeholder="Number 2"
+        onChange={handlechange}
+        value={values.number2}/>
 
       </Form>
     )
