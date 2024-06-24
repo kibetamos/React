@@ -15,15 +15,32 @@ function Add() {
     });
   }
 
-  // function handleCalculate() {
-  //   const num1 = parseFloat(values.number1);
-  //   const num2 = parseFloat(values.number2);
-  //   if (!isNaN(num1) && !isNaN(num2)) {
-  //     setSum(num1 + num2);
-  //   } else {
-  //     setSum('Invalid input');
-  //   }
+  // function handleCalculate(){
+  //   const number1
+
   // }
+
+  function handleCalculate() {
+    const num1 = parseFloat(values.number1);
+
+    const num2 = parseFloat(values.number2);
+
+    if (!isNaN(num1) && !isNaN(num2)) {
+
+      setSum(num1 * num2);
+
+    } else {
+
+      setSum('Invalid input');
+
+    }
+  }
+
+  // if (!isNaN(number1) && !isNaN(number2)) {
+  //       setSum(number1 + number2);
+  //     } else {
+  //       setSum('Invalid input');
+  //     }
 
   return (
     <div>
@@ -41,8 +58,10 @@ function Add() {
         onChange={handleChange}
         placeholder="Enter second number"
       />
-      <button onClick={handleCalculate}>Calculate Sum</button>
-      {sum !== null && <p>Sum: {sum}</p>}
+      <div>
+      <button onClick={handleCalculate}>Multiply</button>
+      {sum !== null && <p>Answ: {sum}</p>}
+      </div>
     </div>
   );
 }
