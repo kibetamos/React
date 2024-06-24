@@ -5,16 +5,16 @@
     How do you import and use the useState hook in a functional component?
 
     2. Syntax and Initialization:
-        How do you initialize a state variable using the useState hook? Provide an example.
-        Can you provide an example of using useState with an initial value?
+    How do you initialize a state variable using the useState hook? Provide an example.
+    Can you provide an example of using useState with an initial value?
 
-    State Management:
-        How do you update a state variable using the useState hook?
-        What happens if you call the state updater function with the same value as the current state?
+    3. State Management:
+    How do you update a state variable using the useState hook?
+    What happens if you call the state updater function with the same value as the current state?
 
-    State with Different Data Types:
-        How can you use useState to manage an object as a state variable? Provide an example.
-        Demonstrate how to manage an array as a state variable using the useState hook.
+    4. State with Different Data Types:
+    How can you use useState to manage an object as a state variable? Provide an example.
+    Demonstrate how to manage an array as a state variable using the useState hook.
 
     Functional Updates:
         What are functional updates in the context of the useState hook, and when should they be used?
