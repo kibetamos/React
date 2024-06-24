@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Add() {
+export default function Add() {
   const [values, setValues] = useState({
     number1: '',
     number2: ''
@@ -66,4 +66,3 @@ function Add() {
   );
 }
 
-export default Add;
