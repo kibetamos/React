@@ -4,7 +4,7 @@
     What is the useState hook in React, and why is it used?
     How do you import and use the useState hook in a functional component?
 
-    Syntax and Initialization:
+    2. Syntax and Initialization:
         How do you initialize a state variable using the useState hook? Provide an example.
         Can you provide an example of using useState with an initial value?
 
