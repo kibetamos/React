@@ -1,4 +1,4 @@
-here are some questions on React's useState hook that can help you understand its concepts and usage better:
+Questions on React's useState hook:
 
     Basic Usage:
         What is the useState hook in React, and why is it used?
