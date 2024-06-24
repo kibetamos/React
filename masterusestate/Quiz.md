@@ -1,8 +1,8 @@
 ## Questions on React's useState hook:
 
-    Basic Usage:
-        What is the useState hook in React, and why is it used?
-        How do you import and use the useState hook in a functional component?
+    1. Basic Usage:
+    What is the useState hook in React, and why is it used?
+    How do you import and use the useState hook in a functional component?
 
     Syntax and Initialization:
         How do you initialize a state variable using the useState hook? Provide an example.
