@@ -22,13 +22,15 @@ export default function Add(){
         type="text"
         placeholder="Number 1"
         onChange={handlechange}
-        value={values.number1}/>
+        value={values.number1}
+        />
 
         <input 
         type="text"
         placeholder="Number 2"
         onChange={handlechange}
-        value={values.number2}/>
+        value={values.number2}
+        />
 
         <button>ADD</button>
 
