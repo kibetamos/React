@@ -1,39 +1,50 @@
-import React from "react";
+import React, { useState } from 'react';
 
-export default function Add(){
-    const [values, setValues] = React.useState({
-        number1: '',
-        number2: ''
-    })
+function Add() {
+  const [values, setValues] = useState({
+    number1: '',
+    number2: ''
+  });
+  const [sum, setSum] = useState(null);
 
-    function handlechange(){
-      setValues
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setValues({
+      ...values,
+      [name]: value
+    });
+  }
 
-    }
+  // function handleCalculate() {
+  //   const num1 = parseFloat(values.number1);
+  //   const num2 = parseFloat(values.number2);
+  //   if (!isNaN(num1) && !isNaN(num2)) {
+  //     setSum(num1 + num2);
+  //   } else {
+  //     setSum('Invalid input');
+  //   }
+  // }
 
-    function handleSubmit(){
-
-    }
-    
-    return(
-
-      <form onSubmit={handleSubmit}>
-        <input 
+  return (
+    <div>
+      <input
         type="text"
-        placeholder="Number 1"
-        onChange={handlechange}
+        name="number1"
         value={values.number1}
-        />
-
-        <input 
+        onChange={handleChange}
+        placeholder="Enter first number"
+      />
+      <input
         type="text"
-        placeholder="Number 2"
-        onChange={handlechange}
+        name="number2"
         value={values.number2}
-        />
-
-        <button>ADD</button>
-
-      </form>
-    )
+        onChange={handleChange}
+        placeholder="Enter second number"
+      />
+      <button onClick={handleCalculate}>Calculate Sum</button>
+      {sum !== null && <p>Sum: {sum}</p>}
+    </div>
+  );
 }
+
+export default Add;
