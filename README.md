@@ -8,6 +8,8 @@ Welcome to the React Projects Showcase repository! This repository contains a co
 
 ### 1. Airbnb
 
+
+
 - **Description**: This project aims to replicate some aspects of the Airbnb website using React. It showcases how React can be used to create a user-friendly interface for browsing and booking accommodations.
 - **Features**:
   - Search functionality
