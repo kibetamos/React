@@ -80,4 +80,10 @@
         This can be mitigated by using techniques like debouncing, memoization, and optimizing rendering logic.
 
     10. Comparison with Class Components:
+
     How does useState in functional components compare to state management in class components?
+
+        In class components, state is managed using this.state and this.setState. 
+        Functional components use the useState hook for state management, 
+        which is often considered more concise and easier to use than the class component approach. 
+        The useState hook also allows for better separation of concerns and easier testing.
