@@ -50,6 +50,9 @@
 
     5. Functional Updates:
     What are functional updates in the context of the useState hook, and when should they be used?
+        Functional updates are used when you need to update the state based on the previous state. 
+        This is done by passing a function to the state updater function.
+        
     Provide an example where a functional update with useState is necessary.
 
     6. Multiple State Variables:
