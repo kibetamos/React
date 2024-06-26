@@ -8,6 +8,22 @@
         It is used to manage local state within a functional component.
 
     How do you import and use the useState hook in a functional component?
+    
+        import React, { useState } from 'react';
+
+        function ExampleComponent() {
+        const [count, setCount] = useState(0);
+
+        return (
+            <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>
+                Click me
+            </button>
+            </div>
+        );
+        }
+
 
     2. Syntax and Initialization:
     How do you initialize a state variable using the useState hook? Provide an example.
