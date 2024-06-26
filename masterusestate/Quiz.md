@@ -1,6 +1,7 @@
 ## Questions on React's useState hook:
 
     1. Basic Usage:
+    
     What is the useState hook in React, and why is it used?
 
         The useState hook is a function that lets you add state to functional components in React. 
@@ -26,6 +27,7 @@
 
 
     2. Syntax and Initialization:
+
     How do you initialize a state variable using the useState hook? Provide an example.
 
         const [name, setName] = React.useState('John');
@@ -35,6 +37,7 @@
         const [age, setAge] = useState(30);
 
     3. State Management:
+
     How do you update a state variable using the useState hook?
 
         setName('Doe');
@@ -45,6 +48,7 @@
         However, React may optimize and avoid unnecessary re-renders under certain conditions.
 
     4. State with Different Data Types:
+
     How can you use useState to manage an object as a state variable? Provide an example.
     Demonstrate how to manage an array as a state variable using the useState hook.
 
@@ -69,11 +73,13 @@
         -Be mindful of the asynchronous nature of state updates.
 
     8. Complex State Logic:
+
     How would you handle complex state logic that involves multiple sub-values with useState?
         You can use multiple useState hooks or manage complex state using a single state object. 
         For very complex logic, consider using useReducer.
 
-    9. Performance Considerations:
+    9. Performance Considerations:\
+
     How can frequent state updates impact performance, and how can this be mitigated?
         Frequent state updates can lead to excessive re-renders, which can impact performance. 
         This can be mitigated by using techniques like debouncing, memoization, and optimizing rendering logic.
