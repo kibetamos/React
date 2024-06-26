@@ -27,6 +27,10 @@
 
     2. Syntax and Initialization:
     How do you initialize a state variable using the useState hook? Provide an example.
+
+        const [name, setName] = useState('John');
+
+        
     Can you provide an example of using useState with an initial value?
 
     3. State Management:
