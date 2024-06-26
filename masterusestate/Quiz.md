@@ -64,9 +64,9 @@
         Setting state directly in the render function can cause an infinite loop of re-renders because each state update triggers a re-render.
 
     What are some common pitfalls to avoid when using the useState hook?
-        Avoid directly mutating the state.
-        Ensure state updates are done in a way that React can detect changes.
-        Be mindful of the asynchronous nature of state updates.
+        -Avoid directly mutating the state.
+        -Ensure state updates are done in a way that React can detect changes.
+        -Be mindful of the asynchronous nature of state updates.
 
     8. Complex State Logic:
     How would you handle complex state logic that involves multiple sub-values with useState?
