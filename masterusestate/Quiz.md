@@ -73,8 +73,11 @@
         You can use multiple useState hooks or manage complex state using a single state object. 
         For very complex logic, consider using useReducer.
 
+
     9. Performance Considerations:
     How can frequent state updates impact performance, and how can this be mitigated?
+        Frequent state updates can lead to excessive re-renders, which can impact performance. 
+        This can be mitigated by using techniques like debouncing, memoization, and optimizing rendering logic.
 
     10. Comparison with Class Components:
     How does useState in functional components compare to state management in class components?
