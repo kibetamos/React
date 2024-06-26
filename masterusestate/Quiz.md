@@ -36,7 +36,13 @@
 
     3. State Management:
     How do you update a state variable using the useState hook?
+
+        setName('Doe');
+
     What happens if you call the sstate updater function with the same value as the current state?
+
+        React will still re-render the component even if the new state value is the same as the current state value. 
+        However, React may optimize and avoid unnecessary re-renders under certain conditions.
 
     4. State with Different Data Types:
     How can you use useState to manage an object as a state variable? Provide an example.
