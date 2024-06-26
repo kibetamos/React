@@ -73,7 +73,6 @@
         You can use multiple useState hooks or manage complex state using a single state object. 
         For very complex logic, consider using useReducer.
 
-
     9. Performance Considerations:
     How can frequent state updates impact performance, and how can this be mitigated?
         Frequent state updates can lead to excessive re-renders, which can impact performance. 
