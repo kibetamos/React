@@ -52,7 +52,7 @@
     What are functional updates in the context of the useState hook, and when should they be used?
         Functional updates are used when you need to update the state based on the previous state. 
         This is done by passing a function to the state updater function.
-        
+
     Provide an example where a functional update with useState is necessary.
 
     6. Multiple State Variables:
@@ -60,7 +60,13 @@
 
     7. Best Practices:
     Why is it considered a best practice to avoid setting state directly in a component render function?
+
+        Setting state directly in the render function can cause an infinite loop of re-renders because each state update triggers a re-render.
+
     What are some common pitfalls to avoid when using the useState hook?
+        Avoid directly mutating the state.
+        Ensure state updates are done in a way that React can detect changes.
+        Be mindful of the asynchronous nature of state updates.
 
     8. Complex State Logic:
     How would you handle complex state logic that involves multiple sub-values with useState?
