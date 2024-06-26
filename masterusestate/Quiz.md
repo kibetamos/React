@@ -2,6 +2,9 @@
 
     1. Basic Usage:
     What is the useState hook in React, and why is it used?
+
+        The useState hook is a function that lets you add state to functional components in React. It returns an array with two elements: the current state value and a function to update that state. It is used to manage local state within a functional component.
+        
     How do you import and use the useState hook in a functional component?
 
     2. Syntax and Initialization:
@@ -10,7 +13,7 @@
 
     3. State Management:
     How do you update a state variable using the useState hook?
-    What happens if you call the state updater function with the same value as the current state?
+    What happens if you call the sstate updater function with the same value as the current state?
 
     4. State with Different Data Types:
     How can you use useState to manage an object as a state variable? Provide an example.
