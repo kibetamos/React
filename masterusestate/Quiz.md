@@ -70,6 +70,8 @@
 
     8. Complex State Logic:
     How would you handle complex state logic that involves multiple sub-values with useState?
+        You can use multiple useState hooks or manage complex state using a single state object. 
+        For very complex logic, consider using useReducer.
 
     9. Performance Considerations:
     How can frequent state updates impact performance, and how can this be mitigated?
