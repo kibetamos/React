@@ -55,7 +55,7 @@ export default function Student(){
                 />
 
                 <input 
-                type="text"
+                type="checkbox"
                 placeholder="school"
                 onChange={handleChange}
                 value={studentData.School}

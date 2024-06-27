@@ -307,8 +307,8 @@ function App() {
           {/* <Challenge1/>    */}
           {/* <Task /> */}
           {/* <Form /> */}
-          {/* < Student /> */}
-          <Add />
+          < Student />
+          {/* <Add /> */}
     </div>
   );
 }
