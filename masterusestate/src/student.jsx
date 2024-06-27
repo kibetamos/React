@@ -59,7 +59,6 @@ export default function Student(){
                 placeholder="school"
                 onChange={handleChange}
                 value={studentData.School}
-                
                 />
 
                 <button>SAVE</button>
