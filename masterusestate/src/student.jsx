@@ -15,7 +15,6 @@ export default function Student(){
 
 //     };
 
-
     const handleChange = (event) => {
         setStudentData(event.target.value);
       };
@@ -30,7 +29,6 @@ export default function Student(){
     return(
         
         <form onSubmit={handleSubmit}>
-
                 <input 
                 type="text"
                 placeholder="Firstname"
