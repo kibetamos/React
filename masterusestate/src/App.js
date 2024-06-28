@@ -312,6 +312,7 @@ function App() {
           {/* < Student /> */}
           {/* <Add /> */}
           < Colour />
+          
     </div>
   );
 }
