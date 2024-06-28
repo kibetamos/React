@@ -15,10 +15,10 @@ export default function Student(){
 
 //     };
 
-const handleChange = (event) => {
-    
-    setStudentData(event.target.value);
-};
+    const handleChange = (event) => {
+        
+        setStudentData(event.target.value);
+    };
 
     function handleSubmit(e){
 
