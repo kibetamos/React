@@ -15,11 +15,13 @@ export default function Student(){
 
 //     };
 
-    const handleChange = (event) => {
-        setStudentData(event.target.value);
-      };
+const handleChange = (event) => {
+    
+    setStudentData(event.target.value);
+};
 
     function handleSubmit(e){
+
         e.preventDefault()
 
         console.log(studentData)
@@ -36,14 +38,12 @@ export default function Student(){
                 value={studentData.firstName}
                 
                 />
-
-
+                
                 <input 
                 type="text"
                 placeholder="Lastname"
                 onChange={handleChange}
                 value={studentData.lastName}
-                
                 />
 
                 <input 
@@ -51,15 +51,14 @@ export default function Student(){
                 placeholder="school"
                 onChange={handleChange}
                 value={studentData.School}
-                
                 />
 
-                <input 
+                {/* <input 
                 type="checkbox"
                 placeholder="school"
                 onChange={handleChange}
                 value={studentData.School}
-                />
+                /> */}
 
                 <button>SAVE</button>
 
