@@ -16,9 +16,9 @@ export default function Person(){
     //     setPerson(newPerson);
     //   };
     const handleIncreaseAge = () => {
-        setPerson(prevPerson => ({
-            ...prevPerson,
-            age: prevPerson.age + 1
+        setPerson(prevP => ({
+            ...prevP,
+            age: prevP.age + 1
         }));
     };
 
