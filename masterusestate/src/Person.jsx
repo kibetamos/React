@@ -4,17 +4,10 @@ import React from "react";
 
 export default function Person(){
     const[person, setPerson] = React.useState({
-        name:"Amos",
-        age:5
+        name:"Doe",
+        age:55
     });
 
-
-    // const handleIncreaseAge = () => {
-    //     // copy the existing person object into a new object
-    //     // while updating the age property
-    //     const newPerson = { ...person, age: person.age + 1 };
-    //     setPerson(newPerson);
-    //   };
     const handleIncreaseAge = () => {
         setPerson(prevP => ({
             ...prevP,
@@ -23,6 +16,7 @@ export default function Person(){
     };
 
     return(
+        
         
         <div>
             <h1>{person.name}</h1>
