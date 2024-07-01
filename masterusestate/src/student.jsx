@@ -39,6 +39,7 @@ export default function Student(){
                 
                 />
                 
+                
                 <input 
                 type="text"
                 placeholder="Lastname"
