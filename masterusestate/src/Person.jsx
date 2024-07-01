@@ -8,9 +8,19 @@ export default function Person(){
         age:5
     });
 
-function handleIncreaseAge(){
 
-}
+    // const handleIncreaseAge = () => {
+    //     // copy the existing person object into a new object
+    //     // while updating the age property
+    //     const newPerson = { ...person, age: person.age + 1 };
+    //     setPerson(newPerson);
+    //   };
+    const handleIncreaseAge = () => {
+        setPerson(prevPerson => ({
+            ...prevPerson,
+            age: prevPerson.age + 1
+        }));
+    };
 
     return(
         
