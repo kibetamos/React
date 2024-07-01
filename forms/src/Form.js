@@ -69,12 +69,14 @@ export default function Form() {
             value={formData.lastName}
             />
 
+
             <input type="text" 
             placeholder="email"
             onChange={handleChange}
             name="email"
             value={formData.email}
             />
+
 
             <textarea 
             name="comments"
