@@ -302,6 +302,8 @@ import Form from './Forms';
 import Student from './student';
 import Add from './add';
 import Colour from './Colour';
+import Person from './Person';
+// Person
 function App() {
   
   return (
@@ -311,7 +313,8 @@ function App() {
           {/* <Form /> */}
           {/* < Student /> */}
           {/* <Add /> */}
-          < Colour />
+          {/* < Colour /> */}
+          < Person />
           
     </div>
   );
