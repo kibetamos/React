@@ -23,19 +23,15 @@ export default function General(){
 
     const handleEdit = () => setEditing(true);
 
-    function handleSubmit(event){
-
-        event.preventDefault()
-        
-        // submitToApi(formData)
+    const handleSubmit = (e) => {
+        e.preventDefault();
         setEditing(false);
-        
-        console.log(formData)
-
-    }
+    };
 
     return(
+
         <div>
+            {editing ? (
             <form className="vertical-form" onSubmit={handleSubmit}>
 
                 Name: <input
@@ -65,6 +61,16 @@ export default function General(){
                 />
                 <button onClick={handleEdit}>Edit</button>
             </form>
+            ) : (
+                <div>
+                    <p>Name: {formData.name}</p>
+                    <p>Email: {formData.email}</p>
+                    <p>Phone: {formData.phone}</p>
+                    <button onClick={handleEdit}>Edit</button>
+                </div>
+            )}
+
+
         </div>
     )
 }
