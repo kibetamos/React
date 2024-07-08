@@ -7,6 +7,19 @@ export default function Education(){
         email:'',
         phone:''
     })
+
+
+    function handleChange(event) {
+        const {name, value, type, checked} = event.target
+        setFormData(prevFormData => {
+            return {
+                ...prevFormData,
+                // [event.target.name]: event.target.value
+                [name]: type === "checkbox" ? checked : value
+            }
+        })
+    }
+
  
     function handleSubmit(event){
 
@@ -23,18 +36,19 @@ export default function Education(){
         <div>
             <form className="vertical-form" onSubmit={handleSubmit}>
 
-                Name: <input 
+                Name: <input
                 type="text"
-                name="name"
                 placeholder="Name"
+                onChange={handleChange}
+                name="name"
                 value={formData.name}
-                
-                />
+            />
 
                 Email: <input 
                 type="text"
                 name="email"
                 placeholder="Email"
+                onChange={handleChange}
                 value={formData.email}
                 
                 />
@@ -43,6 +57,7 @@ export default function Education(){
                 type="int"
                 name="phone"
                 placeholder="Phone Number"
+                onChange={handleChange}
                 value={formData.phone}
                 
                 />
