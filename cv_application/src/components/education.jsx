@@ -1,11 +1,12 @@
 import React from "react";
-import "./Education.css";
+import "../styles/education.css";
+// import "./styles/Education.css";
 export default function Education(){
 
 
     return(
         <div>
-            <form>
+            <form className="vertical-form">
                 Name: <input 
                 type="text"
                 name="name"
