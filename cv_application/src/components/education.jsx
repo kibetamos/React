@@ -6,9 +6,23 @@ export default function Education(){
     return(
         <div>
             <form>
-                School: <input 
-                name="schooldname"
-                placeholder="Schoolname"/>
+                Name: <input 
+                name="name"
+                placeholder="Name"
+                
+                />
+
+                Email: <input 
+                name="email"
+                placeholder="Email"
+                
+                />
+
+                Phone: <input 
+                name="phone"
+                placeholder="Phone Number"
+                
+                />
             </form>
         </div>
     )
