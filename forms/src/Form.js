@@ -76,6 +76,7 @@ export default function Form() {
             name="email"
             value={formData.email}
             />
+            
 
             <textarea 
             name="comments"
