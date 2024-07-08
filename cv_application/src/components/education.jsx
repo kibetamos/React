@@ -1,68 +1,47 @@
-import React from "react";
-import "../styles/education.css";
-// import "./styles/Education.css";
-export default function Education(){
-    const [formData, setFormData] = React.useState({
-        name:'',
-        email:'',
-        phone:''
-    })
+import React, { useState } from 'react';
+import '../styles/Education.css';
 
+export default function Education() {
+    const [editing, setEditing] = useState(true);
+    const [education, setEducation] = useState({ school: '', title: '', date: '' });
 
-    function handleChange(event) {
-        const {name, value, type, checked} = event.target
-        setFormData(prevFormData => {
-            return {
-                ...prevFormData,
-                // [event.target.name]: event.target.value
-                [name]: type === "checkbox" ? checked : value
-            }
-        })
-    }
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setEducation(prevEducation => ({ ...prevEducation, [name]: value }));
+    };
 
- 
-    function handleSubmit(event){
+    const handleEdit = () => setEditing(true);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setEditing(false);
+    };
 
-        event.preventDefault()
-        
-        // submitToApi(formData)
-
-        
-        console.log(formData)
-
-    }
-
-    return(
+    return (
         <div>
-            <form className="vertical-form" onSubmit={handleSubmit}>
-
-                Name: <input
-                type="text"
-                placeholder="Name"
-                onChange={handleChange}
-                name="name"
-                value={formData.name}
-            />
-
-                Email: <input 
-                type="text"
-                name="email"
-                placeholder="Email"
-                onChange={handleChange}
-                value={formData.email}
-                
-                />
-
-                Phone: <input 
-                type="int"
-                name="phone"
-                placeholder="Phone Number"
-                onChange={handleChange}
-                value={formData.phone}
-                
-                />
-                <button>Save</button>
-            </form>
+            {editing ? (
+                <form onSubmit={handleSubmit} className="form">
+                    <label>
+                        School Name:
+                        <input type="text" name="school" value={education.school} onChange={handleChange} />
+                    </label>
+                    <label>
+                        Title of Study:
+                        <input type="text" name="title" value={education.title} onChange={handleChange} />
+                    </label>
+                    <label>
+                        Date of Study:
+                        <input type="text" name="date" value={education.date} onChange={handleChange} />
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+            ) : (
+                <div>
+                    <p>School Name: {education.school}</p>
+                    <p>Title of Study: {education.title}</p>
+                    <p>Date of Study: {education.date}</p>
+                    <button onClick={handleEdit}>Edit</button>
+                </div>
+            )}
         </div>
-    )
+    );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/general_info.css";
 // import "./styles/Education.css";
 export default function General(){
-    const [editing, setEditing] = useState(true);
+    const [editing, setEditing] = React.useState(true);
     const [formData, setFormData] = React.useState({
         name:'',
         email:'',
@@ -59,7 +59,8 @@ export default function General(){
                 value={formData.phone}
                 
                 />
-                <button onClick={handleEdit}>Edit</button>
+                <button type="submit">Submit</button>
+                {/* <button onClick={handleEdit}>Edit</button> */}
             </form>
             ) : (
                 <div>
