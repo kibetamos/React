@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Education.css';
+import '../styles/education.css';
 
 export default function Education() {
     const [editing, setEditing] = useState(true);

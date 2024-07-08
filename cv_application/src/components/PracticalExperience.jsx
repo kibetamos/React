@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/PracticalExperience.css';
+import '../styles/practical.css';
 
 export default function PracticalExperience() {
     const [editing, setEditing] = useState(true);

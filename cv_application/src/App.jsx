@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Education from './components/education'
 import General from './components/general_info'
+import PracticalExperience from './components/PracticalExperience'
 function App() {
   // const [count, setCount] = useState(3)
 
@@ -17,6 +18,8 @@ function App() {
           count is {count}
         </button> */}
         < General/>
+        <Education />
+        <PracticalExperience/>
         
       </div>
     </>
