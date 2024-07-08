@@ -1,0 +1,16 @@
+.horizontal-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.horizontal-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.horizontal-form input {
+    padding: 5px;
+    margin-top: 5px;
+}
