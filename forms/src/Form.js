@@ -83,7 +83,6 @@ export default function Form() {
             onChange={handleChange}
             value={formData.comments} 
             />
-            
 {/* /*
     This is a checkbox input element.
     It allows users to select or deselect an option.
