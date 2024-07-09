@@ -296,15 +296,16 @@
 
 import './App.css';
 // import Form from './Form';
-import Challenge1 from './Challenge1';
-import Task from './Task';
-import Form from './Forms';
-import Student from './student';
-import Add from './add';
-import Colour from './Colour';
-import Person from './Person';
+// import Challenge1 from './Challenge1';
+// import Task from './Task';
+// import Form from './Forms';
+// import Student from './student';
+// import Add from './add';
+// import Colour from './Colour';
+// import Person from './Person';
 // Person
-function App() {
+import Counter from './components/useState/counter';
+export default function App() {
   
   return (
     <div className="App-header">
@@ -314,12 +315,13 @@ function App() {
           {/* < Student /> */}
           {/* <Add /> */}
           {/* < Colour /> */}
-          < Person />
+          {/* < Person /> */}
+          < Counter />
           
     </div>
   );
 }
 
-export default App;
+
 
 
