@@ -22,16 +22,32 @@ export default function Education() {
                 <form onSubmit={handleSubmit} className="form">
                     <label>
                         School Name:
-                        <input type="text" name="school" value={education.school} onChange={handleChange} />
+                        <input type="text" 
+                        name="school" 
+                        value={education.school} 
+                        onChange={handleChange} 
+                        />
+
                     </label>
                     <label>
                         Title of Study:
-                        <input type="text" name="title" value={education.title} onChange={handleChange} />
+                        <input 
+                        type="text" 
+                        name="title" 
+                        value={education.title} 
+                        onChange={handleChange} 
+                        />
                     </label>
                     <label>
                         Date of Study:
-                        <input type="text" name="date" value={education.date} onChange={handleChange} />
+                        <input 
+                        type="text" 
+                        name="date" 
+                        value={education.date} 
+                        onChange={handleChange} 
+                        />
                     </label>
+                    
                     <button type="submit">Submit</button>
                 </form>
             ) : (
