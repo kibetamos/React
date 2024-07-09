@@ -304,7 +304,7 @@ import './App.css';
 // import Colour from './Colour';
 // import Person from './Person';
 // Person
-import Counter from './components/useState/counter';
+import Clock from './components/useState/clock';
 export default function App() {
   
   return (
@@ -316,7 +316,7 @@ export default function App() {
           {/* <Add /> */}
           {/* < Colour /> */}
           {/* < Person /> */}
-          < Counter />
+          < Clock />
           
     </div>
   );
