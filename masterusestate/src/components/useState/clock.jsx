@@ -25,7 +25,7 @@ export default function Clock() {
     <div>
       <p>{counter} seconds have passed.</p>
     </div>
-  );\
+  );
 }
 
 
