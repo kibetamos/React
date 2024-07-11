@@ -27,6 +27,16 @@ export default function Clock() {
     </div>
   );
 }
+useEffect(
+  () => {
+    // execute side effect
+    return () => {
+      // cleanup function on unmounting or re-running effect
+    }
+  },
+  // optional dependency array
+  [/* 0 or more entries */]
+)
 
 
 
