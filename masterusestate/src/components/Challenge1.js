@@ -260,6 +260,7 @@ export default function App() {
      *   `isFavorite` in state above.
      */
     
+        
     let starIcon = contact.isFavorite ? "star-filled.png" : "star-empty.png"
     
     // function toggleFavorite() {
