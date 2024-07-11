@@ -249,7 +249,6 @@ export default function App() {
      * contact.isFavourite ? star-filled.png  : 
      */
 
-
         /**
      * Challenge: Move the star image into its own component (Star)
      * - It should receive a prop called `isFilled` that it
