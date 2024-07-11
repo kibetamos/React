@@ -7,10 +7,15 @@ export default function Clock() {
 
   // Set up an interval to update the counter every second (1000 milliseconds)
   React.useEffect(() => {
-    setInterval(() => {
+    const key = setInterval(() => {
       // Update the counter state, incrementing the current count by 1
       setCounter(count => count + 1);
     }, 1000);
+
+        // Return a cleanup function to clear the interval when the component unmounts
+        return () => {
+          clearInterval(key);
+        };
 
   }, [])// Empty dependency array means this 
   //effect runs only once after the initial render
