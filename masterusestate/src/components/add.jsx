@@ -18,9 +18,10 @@ export default function Add() {
   // function handleCalculate(){
   //   const number1
 
-  
+
   // }
 
+  
   function handleCalculate() {
     const num1 = parseFloat(values.number1);
 
