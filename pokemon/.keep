@@ -1,0 +1,14 @@
+-  scoreboard, which counts the current score
+- and a “Best Score
+- function that displays the cards in a random order anytime a user clicks one.
+-invoke that function when the component mounts.
+
+
+
+
+- cards that display images
+-cards for informational text
+-cards and texts need to be fetched from an external API
+
+
+
