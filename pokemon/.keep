@@ -1,4 +1,4 @@
--  scoreboard, which counts the current score
+- scoreboard, which counts the current score
 - and a “Best Score
 - function that displays the cards in a random order anytime a user clicks one.
 -invoke that function when the component mounts.
