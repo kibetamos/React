@@ -4,8 +4,6 @@
 -invoke that function when the component mounts.
 
 
-
-
 - cards that display images
 -cards for informational text
 -cards and texts need to be fetched from an external API
