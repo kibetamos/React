@@ -7,15 +7,18 @@ export default function Card() {
         lastname:""
     })
 
+
     const handleInputChange = (e) => {
         SetData(e.target.value);
     };
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // setData("")
+
+        SetData("")
 
     }
+    
   return (
     <div>
     <form onSubmit={handleSubmit}>
