@@ -8,11 +8,12 @@ export default function Student() {
     };   
     
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setFormData((formData) => [...formData]);
-        setFormData("")
-    };
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     setFormData((formData) => [...formData]);
+    //     setFormData("")
+    // };
+    
 
   return (
 
@@ -20,8 +21,6 @@ export default function Student() {
 
 
 <form onClick={handleSubmit}>
-
-
         <input 
         placeholder="Name"
         type="text"
@@ -31,6 +30,12 @@ export default function Student() {
         <button>Submit</button>
 
 </form>
+<h4>All the Names!</h4>
+      <ul>
+        {formData.map((formData) => (
+          <li key={formData}>{formData}</li>
+        ))}
+      </ul>
     </div>
   )
 }
