@@ -10,13 +10,14 @@ export default function Card() {
     const handleInputChange = (e) => {
         SetData(e.target.value);
     };
-    
+
     const handleSubmit = (e) => {
+        e.preventDefault()
 
     }
   return (
     <div>
-    <form>
+    <form onSubmit={handleSubmit}>
      <input 
         type="text"
         placeholder="FirstName"
