@@ -306,6 +306,9 @@ import './App.css';
 // Person
 import Clock from './components/useState/clock';
 import Task from './components/classComponents/Task';
+
+import Form from './components/classComponents/Student';
+import Student from './components/classComponents/Student';
 export default function App() {
   
   return (
@@ -318,7 +321,8 @@ export default function App() {
           {/* < Colour /> */}
           {/* < Person /> */}
           {/* < Clock /> */}
-          <Task />
+          {/* <Task /> */}
+          <Student />
           
     </div>
   );
