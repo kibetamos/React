@@ -2,20 +2,23 @@ import React   from "react";
 
 const Task = ({ name }) =>{
 
-    const[todo, setTodos] = React.useState(["Just some demo tasks", "As an example"])
+    const[todos, setTodos] = React.useState(["Just some demo tasks", "As an example"])
     const [inputVal, setInputVal] = React.useState("")
+
+
+
+    const handleInputChange = (e) => {
+        setInputVal(e.target.value);
+    };   
     
-    
-    const handleSubmit = (e) => {
+const handleSubmit = (e) => {
     e.preventDefault();
     setTodos((todo) => [...todo, inputVal]);
     setInputVal("")
 };
 
 
-const handleInputChange = (e) => {
 
-}
     return (
         <section>
             <h3>{name}</h3>
@@ -36,10 +39,10 @@ const handleInputChange = (e) => {
         <h4>All the Tasks</h4>
 
         <ul>
-            {setTodos.map((todo) => (
-                <li key={todo}>{todo}</li>
-            ))}
-        </ul>
+        {todos.map((todo) => (
+          <li key={todo}>{todo}</li>
+        ))}
+      </ul>
         </section>
     );
 
