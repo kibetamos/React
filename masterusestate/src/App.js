@@ -305,6 +305,7 @@ import './App.css';
 // import Person from './Person';
 // Person
 import Clock from './components/useState/clock';
+import Task from './components/classComponents/Task';
 export default function App() {
   
   return (
@@ -316,7 +317,8 @@ export default function App() {
           {/* <Add /> */}
           {/* < Colour /> */}
           {/* < Person /> */}
-          < Clock />
+          {/* < Clock /> */}
+          <Task />
           
     </div>
   );
