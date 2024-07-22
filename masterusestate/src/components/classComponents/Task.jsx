@@ -22,7 +22,7 @@ const handleInputChange = (e) => {
 
                 />
 
-                <button>Submot</button>
+                <button>Submit</button>
             </form>
         
         <h4>All the Tasks</h4>
