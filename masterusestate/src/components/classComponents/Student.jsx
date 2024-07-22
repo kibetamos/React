@@ -29,6 +29,8 @@ export default function Student() {
 
 
     <form onClick={handleSubmit}>
+
+        
             <input 
             placeholder="Name"
             type="text"

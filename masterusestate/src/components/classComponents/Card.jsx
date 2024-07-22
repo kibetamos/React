@@ -7,15 +7,18 @@ export default function Card() {
         lastname:""
     })
 
+    const handleInputChange = (e) => {
+        SetData(e.target.value);
+    };
+
   return (
     <div>
-        
         <input 
         type="text"
         placeholder="Name"
-        value ={data}
+        value ={data.firstname}
+        onChange={handleInputChange}
         />
-        
         
         </div>
   )
