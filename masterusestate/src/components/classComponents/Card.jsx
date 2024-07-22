@@ -13,6 +13,7 @@ export default function Card() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        setData
 
     }
   return (
@@ -36,6 +37,8 @@ export default function Card() {
         <button>OK</button>
 
         </form>
+
+        
         </div>
   )
 }
