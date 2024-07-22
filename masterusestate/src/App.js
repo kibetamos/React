@@ -309,6 +309,8 @@ import Task from './components/classComponents/Task';
 
 import Form from './components/classComponents/Student';
 import Student from './components/classComponents/Student';
+import Card from './components/classComponents/Card';
+
 export default function App() {
   
   return (
@@ -322,7 +324,8 @@ export default function App() {
           {/* < Person /> */}
           {/* < Clock /> */}
           {/* <Task /> */}
-          <Student />
+          {/* <Student /> */}
+          <Card />
           
     </div>
   );

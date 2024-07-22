@@ -28,27 +28,27 @@ export default function Student() {
     <div>
 
 
-<form onClick={handleSubmit}>
-        <input 
-        placeholder="Name"
-        type="text"
-        value={formData}
-        onChange={handleInputChange}
-        />
-        <button>Submit</button>
+    <form onClick={handleSubmit}>
+            <input 
+            placeholder="Name"
+            type="text"
+            value={formData}
+            onChange={handleInputChange}
+            />
+            <button>Submit</button>
 
-</form>
-<h4>All the Names!</h4>
-      {/* <ul>
-        {formData.map((formData) => (
-          <li key={formData}>{formData}</li>
-        ))}
-      </ul> */}
-      <ul>
-        {names.map((name, index) => (
-            <li key={index}>{name}</li>
-        ))}
-        </ul>
+    </form>
+    <h4>All the Names!</h4>
+        {/* <ul>
+            {formData.map((formData) => (
+            <li key={formData}>{formData}</li>
+            ))}
+        </ul> */}
+        <ul>
+            {names.map((name, index) => (
+                <li key={index}>{name}</li>
+            ))}
+            </ul>
     </div>
   )
 }
