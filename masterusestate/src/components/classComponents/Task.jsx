@@ -4,6 +4,14 @@ const Task = ({ name }) =>{
 
     const[todo, setTodos] = React.useState(["Just some demo tasks", "As an example"])
     const [inputVal, setInputVal] = React.useState("")
+    
+    
+    const handleSubmit = (e) => {
+    e.preventDefault();
+    setTodos((todo) => [...todo, inputVal]);
+    setInputVal("")
+};
+
 
 const handleInputChange = (e) => {
 
@@ -11,7 +19,7 @@ const handleInputChange = (e) => {
     return (
         <section>
             <h3>{name}</h3>
-            <form>
+            <form onSubmit={handleSubmit}>
 
             <label htmlFor="task-entry">Enter a task: </label>
                 <input 
