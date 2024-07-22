@@ -13,7 +13,7 @@ export default function Card() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        setData
+        // setData("")
 
     }
   return (
