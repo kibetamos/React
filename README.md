@@ -15,7 +15,6 @@ Welcome to the React Projects Showcase repository! This repository contains a co
   - Booking flow
 - **Technologies**: React, [Additional technologies used]
 
-
 ### 2. Jokes
 
 - **Description**: The Jokes project is a simple React application that generates random jokes for users to enjoy. It highlights React's ability to manage state and handle user interactions efficiently.
