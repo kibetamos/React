@@ -46,18 +46,18 @@ export default function App() {
      <Button text="Click Me!" color="blue" fontSize={20}/> */}
      <Person />
       
-      {/* <ul> */}
-        {/* {animals.map((animal) => (
+      {/* <ul>
+        {animals.map((animal) => (
           
           <li key={animal}>
 
             {animal}
             
             </li>
-        ))} */}
-        {/* {animalsList} */}
+        ))}
+        {animalsList}
         
-      {/* </ul> */}
+      </ul> */}
     </div>
   );
 }
