@@ -1,7 +1,4 @@
-import React from "react"
-
-
-const projects = [
+[
     {
       "title": "Price Tracking",
       "description": "This is a price tracking application using Python and React for the front end. It scrapes prices of products live and compares them in case of any change.",
@@ -47,25 +44,5 @@ const projects = [
       "description": "A simple React app for searching for pets.",
       "githubUrl": "https://github.com/kibetamos/PetLover"
     }
-  ];
+  ]
   
-
-  
-export default function Main(props) {
-    return (
-        <main className={props.darkMode ? "Dark": ""}>
-            <h1 className="main--title">My React Projects</h1>
-            <ul className="main--facts">
-            {projects.map((project, index) => (
-          <li key={index} className="project-item">
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-              View on GitHub
-            </a>
-          </li>
-        ))}
-            </ul>
-        </main>
-    )
-}

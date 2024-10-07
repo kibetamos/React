@@ -19,7 +19,7 @@ export default function Navbar(props) {
             className="nav--icon" 
             />
      {/* /images/react-logo.png */}
-            <h3 className="nav--logo_text">ReactFacts</h3>
+            <h3 className="nav--logo_text">ReactProjects</h3>
             <div
                 className="toggler"
             >
