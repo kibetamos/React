@@ -323,9 +323,9 @@ export default function App() {
           {/* < Colour /> */}
           {/* < Person /> */}
           {/* < Clock /> */}
-          {/* <Task /> */}
+          <Task />
           {/* <Student /> */}
-          <Card />
+          {/* <Card /> */}
           
     </div>
   );
