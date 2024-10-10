@@ -1,4 +1,4 @@
-# NOtes on Forms
+# Notes on Forms
 
 -textarea
 -input -general type
