@@ -7,9 +7,27 @@ const [formData, setFormData] = React.useState({
     lastName:""
 
 })
-    function handleChange(event){
-        
+// const {name, value, type, checked} = event.target
+// setFormData(prevFormData => {
+//     return {
+//         ...prevFormData,
+//         // [event.target.name]: event.target.value
+//         [name]: type === "checkbox" ? checked : value
+//     }
+// })
+function handleChange(event) {
+    const{name, value, type, checked} = event.target
+    setFormData(prevFormData =>{
+        return{
+            ...prevFormData, [name]:type === "checkbox" ? checked :value
+        }
     }
+
+)
+
+
+}
+
 
     function handleSubmit(event){
         // PaymentRespons
@@ -23,7 +41,7 @@ const [formData, setFormData] = React.useState({
     }
 
     return(
-        <form>
+        <form onSubmit={handleSubmit}>  
             <input
             type="text"
             placeholder="Firstname"
@@ -40,7 +58,7 @@ const [formData, setFormData] = React.useState({
             value={formData.lastName}
             />
 
-            <button onSubmit={handleSubmit}>Submit</button>
+            <button>Submit</button>
             </form>
     )
 }
