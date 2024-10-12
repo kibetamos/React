@@ -20,10 +20,11 @@ function handleChange(event) {
     setFormData(prevFormData =>{
 
         return{
-            
+
             ...prevFormData, [name]:type === "checkbox" ? checked :value
         }
     }
+    
 
 )
 
